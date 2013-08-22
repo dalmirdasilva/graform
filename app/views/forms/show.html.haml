@@ -1,0 +1,13 @@
+%p
+  %b Name:
+  = @form.name
+%p
+  %b Description:
+  = @form.description
+%p
+  %b User:
+  = @form.user.name
+
+= link_to 'Edit', edit_form_path(@form)
+\|
+= link_to 'Back', forms_path

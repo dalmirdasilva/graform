@@ -1,0 +1,19 @@
+%h1 Listing replies
+
+%table
+  %tr
+    %th Form
+    %th
+    %th
+    %th
+
+  - @replies.each do |reply|
+    %tr
+      %td= reply.form_id
+      %td= link_to 'Show', reply
+      %td= link_to 'Edit', edit_reply_path(reply)
+      %td= link_to 'Destroy', reply, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Reply', new_reply_path

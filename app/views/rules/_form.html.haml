@@ -1,0 +1,19 @@
+= form_for @rule do |f|
+  - if @rule.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@rule.errors.count, "error")} prohibited this rule from being saved:"
+      %ul
+        - @rule.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :question_id
+    = f.number_field :question_id
+  .field
+    = f.label :next_question_id
+    = f.number_field :next_question_id
+  .field
+    = f.label :option_id
+    = f.number_field :option_id
+  .actions
+    = f.submit 'Save'

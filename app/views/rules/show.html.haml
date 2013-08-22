@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Question:
+  = @rule.question_id
+%p
+  %b Next question:
+  = @rule.next_question_id
+%p
+  %b Option:
+  = @rule.option_id
+
+= link_to 'Edit', edit_rule_path(@rule)
+\|
+= link_to 'Back', rules_path
