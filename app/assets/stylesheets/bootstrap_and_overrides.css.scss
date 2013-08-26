@@ -2,3 +2,35 @@
 body { padding-top: 60px; }
 @import "bootstrap-responsive";
 
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+body {
+  font-family: 'Open Sans' Ubuntu Arial;
+  color: #656565;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+  font-weight: 300;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+}
+  
+.border-bottom {
+  border-bottom: 1px solid #eee;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+i[class*="icon"] {
+  position: relative;
+  bottom: -1px;
+}

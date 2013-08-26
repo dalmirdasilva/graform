@@ -1,5 +1,9 @@
-%ul.nav
+%ul.nav.pull-right
   - if logged_in?
+    %li
+      %a
+        %strong
+          = "Welcome #{current_user.name}"
     %li
       = link_to('Logout', logout_url, :method=>'delete')
   - else

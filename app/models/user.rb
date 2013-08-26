@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_secure_password
   has_many :forms
-  validates_presence_of :password, :on => :create
-  validates :email, :presence => true, :uniqueness => true
+  validates_presence_of :password, on: :create
+  validates :email, presence: true, uniqueness: true
 end

@@ -4,7 +4,7 @@ class CreateForms < ActiveRecord::Migration
 
       t.belongs_to :user
       t.string :name
-      t.string :description
+      t.text :description
 
       t.timestamps
     end

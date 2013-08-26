@@ -1,4 +1,5 @@
 Graform::Application.routes.draw do
+
   resources :rules
   resources :question_types
   resources :options
@@ -9,11 +10,15 @@ Graform::Application.routes.draw do
   resources :users
   resources :sessions
 
+  match "logout" => "sessions#destroy", as: :logout, via: [:get, :delete]
+  get "login" => "sessions#new", as: :login
+  get "signup" => "users#new", as: :signup
+
+  root 'sessions#new', as: :root
+
+  
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  match "logout" => "sessions#destroy", :as => "logout", via: [:get, :delete]
-  get "login" => "sessions#new", :as => "login"
-  get "signup" => "users#new", :as => "signup"
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

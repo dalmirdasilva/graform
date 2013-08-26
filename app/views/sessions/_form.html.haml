@@ -1,0 +1,12 @@
+= form_for :session, html: { class: 'form-horizontal'}, url: {controller: 'sessions', action: 'create'} do |f|
+  .field.control-group
+    = f.label :email, {class: 'control-label'}
+    .controls
+      = f.text_field :email, class: 'span5'
+  .field.control-group
+    = f.label :password, {class: 'control-label'}
+    .controls
+      = f.password_field :password, class: 'span3'
+  .field.control-group
+    .controls
+      = f.submit 'Login', class: 'btn btn-small'

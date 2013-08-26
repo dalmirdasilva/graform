@@ -24,13 +24,13 @@ ActiveRecord::Schema.define(version: 20130822134109) do
   create_table "forms", force: true do |t|
     t.integer  "user_id"
     t.string   "name"
-    t.string   "description"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "options", force: true do |t|
-    t.string   "text"
+    t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 20130822134109) do
 
   create_table "questions", force: true do |t|
     t.integer  "form_id"
-    t.string   "statement"
+    t.text     "statement"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 20130822134109) do
 
   create_table "rules", force: true do |t|
     t.integer  "question_id"
+    t.integer  "next_question_id"
     t.integer  "option_id"
     t.datetime "created_at"
     t.datetime "updated_at"

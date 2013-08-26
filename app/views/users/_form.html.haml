@@ -1,0 +1,22 @@
+= form_for @user, html: { class: 'form-horizontal'} do |f|
+  .field.control-group
+    = f.label :name, {class: 'control-label'}
+    .controls
+      = f.text_field :name, {class: 'span5'}
+  .field.control-group
+    = f.label :email, {class: 'control-label'}
+    .controls
+      = f.text_field :email, {class: 'span5'}
+  .field.control-group
+    = f.label :password, {class: 'control-label'}
+    .controls
+      = f.password_field :password, {class: 'span3'}
+  .field.control-group
+    = f.label :password_confirmation, {class: 'control-label'}
+    .controls
+      = f.password_field :password_confirmation, {class: 'span3'}
+  .field.control-group
+    .controls
+      = f.submit @user.id ? 'Save' : 'Register', class: 'btn btn-small'
+      - if logged_in?
+        = link_to 'Cancel', user_path(@user)

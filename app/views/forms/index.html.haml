@@ -1,23 +1,23 @@
-%h1 Listing forms
-
-%table
-  %tr
-    %th Name
-    %th Description
-    %th User
-    %th
-    %th
-    %th
-
-  - @forms.each do |form|
-    %tr
-      %td= form.name
-      %td= form.description
-      %td= form.user_id
-      %td= link_to 'Show', form
-      %td= link_to 'Edit', edit_form_path(form)
-      %td= link_to 'Destroy', form, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+%h2 My forms
 %br
-
-= link_to 'New Form', new_form_path
+- @forms.each do |form|
+  .row-fluid
+    .span12
+      %h4
+        = form.name
+      %p
+        - replies = form.replies ? form.replies.size : 0
+        - questions = form.questions ? form.questions.size : 0
+        %a.badge{href: questions_url}
+          = "#{questions} questions"
+        %a.badge{href: replies_url}
+          = "#{replies} replies"
+      %p.text-justify
+        = form.description
+      %p
+        .btn-group.pull-right
+          = link_to 'Show', form, { class: 'btn btn-mini' }
+          = link_to 'Edit', edit_form_path(form), { class: 'btn btn-mini' }
+          = link_to 'Destroy', form, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini'
+        
+= link_to 'New Form', new_form_path, class: 'btn btn-small'

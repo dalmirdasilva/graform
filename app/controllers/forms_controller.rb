@@ -1,8 +1,9 @@
 class FormsController < ApplicationController
   before_action :set_form, only: [:show, :edit, :update, :destroy]
-
+  before_action :login_required!, only: [:index, :show, :edit, :update, :destroy]
+  
   def index
-    @forms = Form.all
+    @forms = current_user.forms
   end
 
   def show
@@ -23,6 +24,7 @@ class FormsController < ApplicationController
         format.html { redirect_to @form, notice: 'Form was successfully created.' }
         format.json { render action: 'show', status: :created, location: @form }
       else
+        flash.now[:error] = @form.errors.full_messages
         format.html { render action: 'new' }
         format.json { render json: @form.errors, status: :unprocessable_entity }
       end
@@ -35,6 +37,7 @@ class FormsController < ApplicationController
         format.html { redirect_to @form, notice: 'Form was successfully updated.' }
         format.json { head :no_content }
       else
+        flash.now[:error] = @form.errors.full_messages
         format.html { render action: 'edit' }
         format.json { render json: @form.errors, status: :unprocessable_entity }
       end
