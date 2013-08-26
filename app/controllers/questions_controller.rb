@@ -1,23 +1,28 @@
+require 'form_resource'
+
 class QuestionsController < ApplicationController
+  include FormResource
   before_action :set_question, only: [:show, :edit, :update, :destroy]
-  before_action :login_required!, only: [:show, :edit, :update, :destroy]
+  before_action :login_required!
 
   def index
-    @questions = Question.all
+    @questions = @form.questions
   end
 
   def show
   end
 
   def new
-    @question = Question.new
+    @question = @form.questions.new(form_id: @form.id)
   end
 
   def edit
   end
 
   def create
-    @question = Question.new(question_params)
+    puts "\n\n\n#{question_params}\n\n\n"
+    @question = @form.questions.new(question_params)
+    puts "\n\n\n#{@question}\n\n\n"
 
     respond_to do |format|
       if @question.save

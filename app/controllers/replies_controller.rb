@@ -1,23 +1,26 @@
+require 'form_resource'
+    
 class RepliesController < ApplicationController
+  include FormResource
   before_action :set_reply, only: [:show, :edit, :update, :destroy]
   before_action :login_required!, only: [:show, :edit, :update, :destroy]
 
   def index
-    @replies = Reply.all
+    @replies = @form.replies
   end
 
   def show
   end
 
   def new
-    @reply = Reply.new
+    @reply = @form.replies.build
   end
 
   def edit
   end
 
   def create
-    @reply = Reply.new(reply_params)
+    @reply = @form.replies.build(reply_params)
 
     respond_to do |format|
       if @reply.save

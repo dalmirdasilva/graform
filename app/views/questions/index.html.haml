@@ -1,21 +1,6 @@
-%h1 Listing questions
 
-%table
-  %tr
-    %th Type
-    %th Statement
-    %th
-    %th
-    %th
-
-  - @questions.each do |question|
-    %tr
-      %td= question.type_id
-      %td= question.statement
-      %td= link_to 'Show', question
-      %td= link_to 'Edit', edit_question_path(question)
-      %td= link_to 'Destroy', question, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+%h2 Form questions
 %br
-
-= link_to 'New Question', new_question_path
+- @questions.each do |question|
+  .row-fluid
+    .span12

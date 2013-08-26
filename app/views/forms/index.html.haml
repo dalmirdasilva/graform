@@ -8,9 +8,9 @@
       %p
         - replies = form.replies ? form.replies.size : 0
         - questions = form.questions ? form.questions.size : 0
-        %a.badge{href: questions_url}
+        %a.badge{href: form_questions_url(form)}
           = "#{questions} questions"
-        %a.badge{href: replies_url}
+        %a.badge{href: form_replies_url(form)}
           = "#{replies} replies"
       %p.text-justify
         = form.description

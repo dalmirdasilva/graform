@@ -2,13 +2,19 @@ Graform::Application.routes.draw do
 
   resources :rules
   resources :question_types
-  resources :options
-  resources :questions
-  resources :answers
-  resources :replies
-  resources :forms
   resources :users
   resources :sessions
+  
+  resources :forms do
+    
+    resources :replies do
+      resources :answers
+    end
+    
+    resources :questions do
+      resources :options
+    end
+  end
 
   match "logout" => "sessions#destroy", as: :logout, via: [:get, :delete]
   get "login" => "sessions#new", as: :login
