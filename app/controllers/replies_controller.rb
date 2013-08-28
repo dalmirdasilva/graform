@@ -24,7 +24,7 @@ class RepliesController < ApplicationController
 
     respond_to do |format|
       if @reply.save
-        format.html { redirect_to @reply, notice: 'Reply was successfully created.' }
+        format.html { redirect_to form_reply_url(@form, @reply), notice: 'Reply was successfully created.' }
         format.json { render action: 'show', status: :created, location: @reply }
       else
         format.html do
@@ -39,7 +39,7 @@ class RepliesController < ApplicationController
   def update
     respond_to do |format|
       if @reply.update(reply_params)
-        format.html { redirect_to @reply, notice: 'Reply was successfully updated.' }
+        format.html { redirect_to form_reply_url(@form, @reply), notice: 'Reply was successfully updated.' }
         format.json { head :no_content }
       else
         format.html do
@@ -54,7 +54,7 @@ class RepliesController < ApplicationController
   def destroy
     @reply.destroy
     respond_to do |format|
-      format.html { redirect_to replies_url }
+      format.html { redirect_to form_replies_url(@form) }
       format.json { head :no_content }
     end
   end

@@ -1,19 +1,14 @@
-%h1 Listing replies
-
-%table
-  %tr
-    %th Form
-    %th
-    %th
-    %th
-
-  - @replies.each do |reply|
-    %tr
-      %td= reply.form_id
-      %td= link_to 'Show', reply
-      %td= link_to 'Edit', edit_reply_path(reply)
-      %td= link_to 'Destroy', reply, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+%h2 Form replies
 %br
-
-= link_to 'New Reply', new_reply_path
+- @replies.each do |reply|
+  .row-fluid
+    .span12
+      %p.text-justify
+        = reply.id
+      %p
+        .btn-group.pull-right
+          = link_to 'Show', form_reply_path(@form, reply), { class: 'btn btn-mini' }
+          = link_to 'Edit', edit_form_reply_path(@form, reply), { class: 'btn btn-mini' }
+          = link_to 'Destroy', form_reply_path(@form, reply), { method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini' }
+        
+= link_to 'New reply', new_form_reply_path(@form), class: 'btn btn-small'

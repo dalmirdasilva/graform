@@ -18,6 +18,6 @@
         .btn-group.pull-right
           = link_to 'Show', form, { class: 'btn btn-mini' }
           = link_to 'Edit', edit_form_path(form), { class: 'btn btn-mini' }
-          = link_to 'Destroy', form, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini'
+          = link_to 'Destroy', form, { method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini' }
         
 = link_to 'New Form', new_form_path, class: 'btn btn-small'

@@ -1,8 +1,12 @@
-= form_for @question, url: form_questions_url(@form), html: { class: 'form-horizontal'} do |f|
+= form_for @question, url: form_question_url(@form, @question), html: { class: 'form-horizontal'} do |f|
   .field.control-group
-    = f.label :type, {class: 'control-label'}
+    %label.control-label Form
     .controls
-      = f.number_field :type, class: 'span5'
+      %input.span5{ type: :text, disabled: true, value: @form.name }
+  .field.control-group
+    = f.label :question_type_id, {class: 'control-label'}
+    .controls
+      = f.number_field :question_type_id, { class: 'span5' }
   .field.control-group
     = f.label :statement, class: 'control-label'
     .controls
@@ -11,4 +15,4 @@
     .controls
       .btn-group
         = f.submit 'Save', { class: 'btn btn-small' }
-        = link_to 'Cancel', form_questions_url, { class: 'btn btn-small' }
+        = link_to 'Cancel', form_questions_url(@form), { class: 'btn btn-small' }
