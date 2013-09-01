@@ -7,12 +7,15 @@
         = question.statement
       %p
         - options = question.options ? question.options.size : 0
+        - rules = question.rules ? question.rules.size : 0
         %a.badge{ href: form_question_options_path(@form, question) }
           = "#{options} options"
+        %a.badge{ href: form_question_rules_path(@form, question) }
+          = "#{rules} rules"
       %p
         .btn-group.pull-right
           = link_to 'Show', form_question_path(@form, question), { class: 'btn btn-mini' }
           = link_to 'Edit', edit_form_question_path(@form, question), { class: 'btn btn-mini' }
           = link_to 'Destroy', form_question_path(@form, question), { method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini' }
-        
+
 = link_to 'New question', new_form_question_path(@form), class: 'btn btn-small'

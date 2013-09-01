@@ -1,23 +1,26 @@
-%h1 Listing rules
-
+%h2 Listing rules
+%br
 %table
   %tr
     %th Question
     %th Next question
     %th Option
     %th
-    %th
-    %th
 
   - @rules.each do |rule|
     %tr
-      %td= rule.question_id
-      %td= rule.next_question_id
-      %td= rule.option_id
-      %td= link_to 'Show', rule
-      %td= link_to 'Edit', edit_rule_path(rule)
-      %td= link_to 'Destroy', rule, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td
+        = rule.question_id
+      %td
+        = rule.next_question_id
+      %td
+        = rule.option_id
+      %td
+        .btn-group.pull-right
+          = link_to 'Show', form_question_rule_path(@form, @question, rule), { class: 'btn btn-mini' }
+          = link_to 'Edit', edit_form_question_rule_path(@form, @question, rule), { class: 'btn btn-mini' }
+          = link_to 'Destroy', form_question_rule_path(@form, @reply, rule), { method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini' }
 
 %br
 
-= link_to 'New Rule', new_rule_path
+= link_to 'New rule', new_form_question_rule_path, class: 'btn btn-small'

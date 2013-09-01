@@ -1,19 +1,22 @@
-= form_for @answer do |f|
-  - if @answer.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@answer.errors.count, "error")} prohibited this answer from being saved:"
-      %ul
-        - @answer.errors.full_messages.each do |msg|
-          %li= msg
+= form_for @answer, url: form_reply_answer_path(@form, @reply, @answer), html: { class: 'form-horizontal'} do |f|
 
-  .field
-    = f.label :reply_id
-    = f.number_field :reply_id
-  .field
-    = f.label :question_id
-    = f.number_field :question_id
-  .field
-    = f.label :option_id
-    = f.number_field :option_id
-  .actions
-    = f.submit 'Save'
+  .field.control-group
+    = f.label :reply_id, class: 'control-label'
+    .controls
+      = f.number_field :reply_id, class: 'span5'
+      
+  .field.control-group
+    = f.label :question_id, class: 'control-label'
+    .controls
+      = f.number_field :question_id, class: 'span5'
+      
+  .field.control-group
+    = f.label :option_id, class: 'control-label'
+    .controls
+      = f.number_field :option_id, class: 'span5'
+      
+  .field.control-group
+    .controls
+      .btn-group
+        = f.submit 'Save', { class: 'btn btn-small' }
+        = link_to 'Cancel', form_reply_answers_path(@form, @reply), { class: 'btn btn-small' }

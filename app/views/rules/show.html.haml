@@ -1,15 +1,9 @@
-%p#notice= notice
-
 %p
-  %b Question:
   = @rule.question_id
 %p
-  %b Next question:
   = @rule.next_question_id
 %p
-  %b Option:
   = @rule.option_id
-
-= link_to 'Edit', edit_rule_path(@rule)
-\|
-= link_to 'Back', rules_path
+.btn-group.pull-right
+  = link_to 'Edit', edit_form_question_rule_path(@form, @question, @rule), { class: 'btn btn-mini' }
+  = link_to 'All', form_question_rules_path(@form, @question), { class: 'btn btn-mini' }

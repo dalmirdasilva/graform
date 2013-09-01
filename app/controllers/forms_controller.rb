@@ -1,4 +1,5 @@
 class FormsController < ApplicationController
+
   before_action :set_form, only: [:show, :edit, :update, :destroy]
   before_action :login_required!, only: [:index, :show, :edit, :update, :destroy]
   

@@ -1,5 +1,9 @@
 %p
   = @reply.id
+%p
+  - answers = @reply.answers ? @reply.answers.size : 0
+  %a.badge{ href: form_reply_answers_path(@form, @reply) }
+    = "#{answers} answers"
 
 .btn-group.pull-right
   = link_to 'Edit', edit_form_reply_url(@form, @reply), { class: 'btn btn-mini' }

@@ -1,23 +1,24 @@
-%h1 Listing answers
-
+%h2 Listing answers
+%br
 %table
   %tr
     %th Reply
     %th Question
     %th Option
     %th
-    %th
-    %th
 
   - @answers.each do |answer|
     %tr
-      %td= answer.reply_id
-      %td= answer.question_id
-      %td= answer.option_id
-      %td= link_to 'Show', answer
-      %td= link_to 'Edit', edit_answer_path(answer)
-      %td= link_to 'Destroy', answer, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td
+        = answer.reply_id
+      %td
+        = answer.question_id
+      %td
+        = answer.option_id
+      %td
+        .btn-group.pull-right
+          = link_to 'Show', form_reply_answer_path(@form, @reply, answer), { class: 'btn btn-mini' }
+          = link_to 'Edit', edit_form_reply_answer_path(@form, @reply, answer), { class: 'btn btn-mini' }
+          = link_to 'Destroy', form_reply_answer_path(@form, @reply, answer), { method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini' }
 
-%br
-
-= link_to 'New Answer', new_answer_path
+= link_to 'New Answer', new_form_reply_answer_path(@form, @reply), class: 'btn btn-small'

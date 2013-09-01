@@ -1,7 +1,9 @@
 require 'form_resource'
 
 class QuestionsController < ApplicationController
+
   include FormResource
+  
   before_action :set_question, only: [:show, :edit, :update, :destroy]
   before_action :login_required!
 

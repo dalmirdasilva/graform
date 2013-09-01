@@ -1,6 +1,5 @@
 Graform::Application.routes.draw do
 
-  resources :rules
   resources :question_types
   resources :users
   resources :sessions
@@ -12,6 +11,7 @@ Graform::Application.routes.draw do
     end
     
     resources :questions do
+      resources :rules
       resources :options
     end
   end

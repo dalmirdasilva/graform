@@ -1,27 +1,34 @@
+require 'form_resource'
+require 'question_resource'
+
 class RulesController < ApplicationController
+
+  include FormResource
+  include QuestionResource
+
   before_action :set_rule, only: [:show, :edit, :update, :destroy]
   before_action :login_required!, only: [:show, :edit, :update, :destroy]
 
   def index
-    @rules = Rule.all
+    @rules = @question.rules
   end
 
   def show
   end
 
   def new
-    @rule = Rule.new
+    @rule = @question.rules.new
   end
 
   def edit
   end
 
   def create
-    @rule = Rule.new(rule_params)
+    @rule = @question.rules.create(rule_params)
 
     respond_to do |format|
       if @rule.save
-        format.html { redirect_to @rule, notice: 'Rule was successfully created.' }
+        format.html { redirect_to form_question_rule_path(@form, @question, @rule), notice: 'Rule was successfully created.' }
         format.json { render action: 'show', status: :created, location: @rule }
       else
         format.html do
@@ -36,7 +43,7 @@ class RulesController < ApplicationController
   def update
     respond_to do |format|
       if @rule.update(rule_params)
-        format.html { redirect_to @rule, notice: 'Rule was successfully updated.' }
+        format.html { redirect_to form_question_rule_path(@form, @question, @rule), notice: 'Rule was successfully updated.' }
         format.json { head :no_content }
       else
         format.html do
@@ -51,7 +58,7 @@ class RulesController < ApplicationController
   def destroy
     @rule.destroy
     respond_to do |format|
-      format.html { redirect_to rules_url }
+      format.html { redirect_to form_question_rules_path(@form, @question) }
       format.json { head :no_content }
     end
   end

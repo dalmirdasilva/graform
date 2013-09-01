@@ -1,15 +1,9 @@
-%p#notice= notice
-
 %p
-  %b Reply:
   = @answer.reply_id
 %p
-  %b Question:
   = @answer.question_id
 %p
-  %b Option:
   = @answer.option_id
-
-= link_to 'Edit', edit_answer_path(@answer)
-\|
-= link_to 'Back', answers_path
+.btn-group.pull-right
+  = link_to 'Edit', edit_form_reply_answer_path(@form, @reply, @answer), { class: 'btn btn-mini' }
+  = link_to 'All', form_reply_answers_path(@form, @reply), { class: 'btn btn-mini' }

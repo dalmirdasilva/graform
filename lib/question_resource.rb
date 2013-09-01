@@ -1,6 +1,5 @@
 
 module QuestionResource
-  include FormResource
 
   def self.included(klass)
     klass.instance_eval do
@@ -12,7 +11,7 @@ module QuestionResource
 
   def load_question
     @question = Question.find(params[:question_id]) rescue nil
-    redirect_to questions_url, notice: 'The question does not exist.' unless @question
+    redirect_to form_questions_url(@form), notice: 'The question does not exist.' unless @question
   end
 end
 

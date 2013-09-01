@@ -1,19 +1,17 @@
-= form_for @rule do |f|
-  - if @rule.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@rule.errors.count, "error")} prohibited this rule from being saved:"
-      %ul
-        - @rule.errors.full_messages.each do |msg|
-          %li= msg
+= form_for @rule, url: form_question_rule_path(@form, @question, @rule), html: { class: 'form-horizontal'} do |f|
 
-  .field
-    = f.label :question_id
-    = f.number_field :question_id
-  .field
-    = f.label :next_question_id
-    = f.number_field :next_question_id
-  .field
-    = f.label :option_id
-    = f.number_field :option_id
-  .actions
-      = f.submit 'Save', class: 'btn btn-small'
+  .field.control-group
+    = f.label :next_question_id, class: 'control-label'
+    .controls
+      = f.number_field :next_question_id, class: 'span5'
+      
+  .field.control-group
+    = f.label :option_id, class: 'control-label'
+    .controls
+      = f.number_field :option_id, class: 'span5'
+      
+  .field.control-group
+    .controls
+      .btn-group
+        = f.submit 'Save', { class: 'btn btn-small' }
+        = link_to 'Cancel', form_question_rules_path(@form, @question), { class: 'btn btn-small' }

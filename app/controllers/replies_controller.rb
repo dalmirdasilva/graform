@@ -1,7 +1,9 @@
 require 'form_resource'
     
 class RepliesController < ApplicationController
+
   include FormResource
+  
   before_action :set_reply, only: [:show, :edit, :update, :destroy]
   before_action :login_required!, only: [:show, :edit, :update, :destroy]
 
