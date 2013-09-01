@@ -1,4 +1,6 @@
+
 module QuestionResource
+  include FormResource
 
   def self.included(klass)
     klass.instance_eval do

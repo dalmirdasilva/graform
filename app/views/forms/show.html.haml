@@ -2,6 +2,13 @@
   = @form.name
 %p
   = @form.description
+%p
+  - replies = @form.replies ? @form.replies.size : 0
+  - questions = @form.questions ? @form.questions.size : 0
+  %a.badge{href: form_questions_url(@form)}
+    = "#{questions} questions"
+  %a.badge{href: form_replies_url(@form)}
+    = "#{replies} replies"
 
 .btn-group.pull-right
   = link_to 'Edit', edit_form_path(@form), { class: 'btn btn-mini' }

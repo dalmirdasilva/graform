@@ -1,9 +1,6 @@
-%p#notice= notice
-
-%p
-  %b Text:
+%h3 
   = @option.text
 
-= link_to 'Edit', edit_option_path(@option)
-\|
-= link_to 'Back', options_path
+.btn-group.pull-right
+  = link_to 'Edit', edit_form_question_option_path(@form, @question, @form), { class: 'btn btn-mini' }
+  = link_to 'All', form_question_options_path(@form, @question), { class: 'btn btn-mini' }

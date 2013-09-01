@@ -1,19 +1,14 @@
-%h1 Listing options
-
-%table
-  %tr
-    %th Text
-    %th
-    %th
-    %th
-
-  - @options.each do |option|
-    %tr
-      %td= option.text
-      %td= link_to 'Show', option
-      %td= link_to 'Edit', edit_option_path(option)
-      %td= link_to 'Destroy', option, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+%h2 Listing options
 %br
-
-= link_to 'New Option', new_option_path
+- @options.each do |option|
+  .row-fluid
+    .span12
+      %h4
+        = option.text
+      %p
+        .btn-group.pull-right
+          = link_to 'Show', form_question_option_path(@form, @question, option), { class: 'btn btn-mini' }
+          = link_to 'Edit', edit_form_question_option_path(@form, @question, option), { class: 'btn btn-mini' }
+          = link_to 'Destroy', form_question_option_path(@form, @question, option), { method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini' }
+        
+= link_to 'New option', new_form_question_option_path, class: 'btn btn-small'

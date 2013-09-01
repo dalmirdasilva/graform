@@ -66,6 +66,5 @@ class RepliesController < ApplicationController
     end
 
     def reply_params
-      params.require(:reply).permit(:form_id)
     end
 end

@@ -1,9 +1,6 @@
-%p#notice= notice
-
 %p
-  %b Form:
-  = @reply.form_id
+  = @reply.id
 
-= link_to 'Edit', edit_reply_path(@reply)
-\|
-= link_to 'Back', replies_path
+.btn-group.pull-right
+  = link_to 'Edit', edit_form_reply_url(@form, @reply), { class: 'btn btn-mini' }
+  = link_to 'All', form_replies_url(@form), { class: 'btn btn-mini' }

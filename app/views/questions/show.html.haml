@@ -1,5 +1,9 @@
 %p
   = @question.statement
+%p
+  - options = @question.options ? @question.options.size : 0
+  %a.badge{ href: form_question_options_path(@form, @question) }
+    = "#{options} options"
 
 .btn-group.pull-right
   = link_to 'Edit', edit_form_question_url(@form, @question), { class: 'btn btn-mini' }
