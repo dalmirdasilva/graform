@@ -20,4 +20,101 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+
+  save: Save
+  cancel: Cancel
+  all: All
+  edit: Edit
+  delete: Delete
+  destroy: Destroy
+  show: Show
+  form: &form Form
+  forms: &forms Forms
+  questions: &questions Questions
+  question: &question Question
+  answers: &answers Answers
+  answer: &answer Answer
+  options: &options Options
+  option: &option Option
+  replies: &replies Replies
+  reply: &reply Reply
+  rules: &rules Rules
+  rule: &rule Rule
+
+  title:
+    default: 
+    forms:
+      index: "My forms"
+      edit: "Edit form"
+      new: &new
+        "New form"
+      create: *new
+    questions:
+      index: "Questions list"
+      edit: "Edit question"
+      new: &new
+        "New question"
+      create: *new
+    options:
+      index: "Options list"
+      edit: "Edit option"
+      new: &new
+        "New option"
+      create: *new
+    replies:
+      index: "Replies list"
+      edit: "Edit reply"
+      new: &new
+        "New reply"
+      create: *new
+    answers:
+      index: "Answers list"
+      edit: "Edit answer"
+      new: &new
+        "New answer"
+      create: *new
+    rules:
+      index: "Rules list"
+      edit: "Edit rule"
+      new: &new
+        "New rule"
+      create: *new
+
+  activerecord:
+    models:
+      form: *form
+      question: *question
+      option: *option
+      answer: *answer
+      reply: *reply
+      rule: *rule
+    successful:
+      messages:
+        form:
+          created: Form was successfully created.
+          updated: Form was successfully updated.
+          deleted: Form was successfully deleted.
+        question:
+          created: Question was successfully created.
+          updated: Question was successfully updated.
+          deleted: Question was successfully deleted.
+        option:
+          created: Option was successfully created.
+          updated: Option was successfully updated.
+          deleted: Option was successfully deleted.
+        reply:
+          created: Reply was successfully created.
+          updated: Reply was successfully updated.
+          deleted: Reply was successfully deleted.
+        answer:
+          created: Answer was successfully created.
+          updated: Answer was successfully updated.
+          deleted: Answer was successfully deleted.
+        rule:
+          created: Rule was successfully created.
+          updated: Rule was successfully updated.
+          deleted: Rule was successfully deleted.
+        user:
+          created: User was successfully created.
+          updated: User was successfully updated.
+          deleted: User was successfully deleted.

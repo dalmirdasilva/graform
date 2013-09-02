@@ -1,10 +1,13 @@
 class FormsController < ApplicationController
 
-  before_action :set_form, only: [:show, :edit, :update, :destroy]
+  before_action :set_form, only: [:show, :edit, :update, :destroy, :editor]
   before_action :login_required!, only: [:index, :show, :edit, :update, :destroy]
   
   def index
     @forms = current_user.forms
+  end
+
+  def editor
   end
 
   def show
@@ -22,8 +25,8 @@ class FormsController < ApplicationController
     @form.user = current_user
     respond_to do |format|
       if @form.save
-        format.html { redirect_to @form, notice: 'Form was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @form }
+        format.html { redirect_to @form, notice: t('activerecord.successful.messages.form.created') }
+        format.json { render action: 'editor', status: :created, location: @form }
       else
         flash.now[:error] = @form.errors.full_messages
         format.html { render action: 'new' }
@@ -35,7 +38,7 @@ class FormsController < ApplicationController
   def update
     respond_to do |format|
       if @form.update(form_params)
-        format.html { redirect_to @form, notice: 'Form was successfully updated.' }
+        format.html { redirect_to @form, notice: t('activerecord.successful.messages.form.updated') }
         format.json { head :no_content }
       else
         flash.now[:error] = @form.errors.full_messages
@@ -56,7 +59,7 @@ class FormsController < ApplicationController
   private
 
     def set_form
-      @form = Form.find(params[:id])
+      @form = Form.find(params[:id] || params[:form_id])
     end
 
     def form_params

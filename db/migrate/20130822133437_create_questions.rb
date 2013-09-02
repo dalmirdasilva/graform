@@ -3,7 +3,7 @@ class CreateQuestions < ActiveRecord::Migration
     create_table :questions do |t|
       t.belongs_to :form
       t.belongs_to :question_type
-      t.text :statement
+      t.text :text
 
       t.timestamps
     end

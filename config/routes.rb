@@ -4,8 +4,11 @@ Graform::Application.routes.draw do
   resources :users
   resources :sessions
   
+  
   resources :forms do
     
+    get :editor
+  
     resources :replies do
       resources :answers
     end
@@ -21,7 +24,6 @@ Graform::Application.routes.draw do
   get "signup" => "users#new", as: :signup
 
   root 'sessions#new', as: :root
-
   
   # You can have the root of your site routed with "root"
   # root 'welcome#index'

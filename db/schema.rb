@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20130823020624) do
   create_table "questions", force: true do |t|
     t.integer  "form_id"
     t.integer  "question_type_id"
-    t.text     "statement"
+    t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

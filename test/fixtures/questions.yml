@@ -2,8 +2,8 @@
 
 one:
   type_id: 1
-  statement: MyString
+  text: MyString
 
 two:
   type_id: 1
-  statement: MyString
+  text: MyString

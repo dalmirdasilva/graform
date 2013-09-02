@@ -26,9 +26,10 @@ class QuestionsController < ApplicationController
 
     respond_to do |format|
       if @question.save
-        format.html { redirect_to form_question_url(@form, @question), notice: 'Question was successfully created.' }
+        format.html { redirect_to form_question_url(@form, @question), notice: t('activerecord.successful.messages.question.created') }
         format.json { render action: 'show', status: :created, location: @question }
       else
+        flash.now[:error] = @question.errors.full_messages
         format.html { render action: 'new' }
         format.json { render json: @question.errors, status: :unprocessable_entity }
       end
@@ -38,9 +39,10 @@ class QuestionsController < ApplicationController
   def update
     respond_to do |format|
       if @question.update(question_params)
-        format.html { redirect_to form_question_url(@form, @question), notice: 'Question was successfully updated.' }
+        format.html { redirect_to form_question_url(@form, @question), notice: t('activerecord.successful.messages.question.updated') }
         format.json { head :no_content }
       else
+        flash.now[:error] = @question.errors.full_messages
         format.html { render action: 'edit' }
         format.json { render json: @question.errors, status: :unprocessable_entity }
       end
@@ -62,6 +64,6 @@ class QuestionsController < ApplicationController
     end
 
     def question_params
-      params.require(:question).permit(:question_type_id, :statement)
+      params.require(:question).permit(:question_type_id, :text)
     end
 end
