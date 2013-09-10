@@ -1,4 +1,4 @@
-development:
+development: &development
   adapter: mysql2
   database: graform_development
   host: 127.0.0.1
@@ -14,7 +14,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  <<: *development
+  database: graform_production
   pool: 5
   timeout: 5000
