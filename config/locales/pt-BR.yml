@@ -22,7 +22,7 @@ pt-BR:
   rule: &rule Regra
 
   title:
-    default: 
+    default: Sem tradução
     forms:
       index: Meus formulários
       edit: Editar formulário
@@ -34,6 +34,12 @@ pt-BR:
       edit: Editar questão
       new:  &new
         Nova questão
+      create: *new
+    question_types:
+      index: Lista de tipos de questão
+      edit: Editar tipo de questão
+      new:  &new
+        Nova tipo de questão
       create: *new
     options:
       index: Lista de opções

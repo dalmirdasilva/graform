@@ -1,19 +1,16 @@
-%h1 Listing question_types
-
-%table
-  %tr
-    %th Name
-    %th
-    %th
-    %th
-
-  - @question_types.each do |question_type|
-    %tr
-      %td= question_type.name
-      %td= link_to 'Show', question_type
-      %td= link_to 'Edit', edit_question_type_path(question_type)
-      %td= link_to 'Destroy', question_type, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+%h2 Question types
 %br
+- @question_types.each do |question_type|
+  .row-fluid
+    .span12
+      %p
+        = question_type.code
+      %p
+        = question_type.name
+      %p
+        .btn-group.pull-right
+          = link_to 'Show', question_type_path(question_type), { class: 'btn btn-mini' }
+          = link_to 'Edit', edit_question_type_path(question_type), { class: 'btn btn-mini' }
+          = link_to 'Destroy', question_type_path(question_type), { method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini' }
 
-= link_to 'New Question type', new_question_type_path
+= link_to 'New question type', new_question_type_path, class: 'btn btn-small'
