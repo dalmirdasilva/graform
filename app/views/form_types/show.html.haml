@@ -1,0 +1,8 @@
+%p
+  = @form_type.code
+%p
+  = @form_type.name
+
+.btn-group.pull-right
+  = link_to t('edit'), edit_form_type_path(@form_type), { class: 'btn btn-mini' }
+  = link_to t('all'), form_types_path, { class: 'btn btn-mini' }

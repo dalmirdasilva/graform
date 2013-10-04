@@ -1,0 +1,14 @@
+= form_for @form_type, url: form_type_url(@form_type), html: { class: 'form-horizontal'} do |f|
+  .field.control-group
+    = f.label :code, class: 'control-label'
+    .controls
+      = f.number_field :code, class: 'span2'
+  .field.control-group
+    = f.label :name, class: 'control-label'
+    .controls
+      = f.text_field :name, class: 'span5'
+  .field.control-group
+    .controls
+      .btn-group
+        = f.submit t('save'), { class: 'btn btn-small' }
+        = link_to t('cancel'), form_types_url, { class: 'btn btn-small' }

@@ -1,0 +1,17 @@
+%h2
+  = page_name
+%br
+- @form_types.each do |form_type|
+  .row-fluid
+    .span12
+      %p
+        = form_type.code
+      %p
+        = form_type.name
+      %p
+        .btn-group.pull-right
+          = link_to t('show'), form_type_path(form_type), { class: 'btn btn-mini' }
+          = link_to t('edit'), edit_form_type_path(form_type), { class: 'btn btn-mini' }
+          = link_to t('destroy'), form_type_path(form_type), { method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini' }
+
+= link_to t('title.question_types.new'), new_form_type_path, class: 'btn btn-small'
