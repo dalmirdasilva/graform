@@ -28,7 +28,7 @@ class RulesController < ApplicationController
 
     respond_to do |format|
       if @rule.save
-        format.html { redirect_to form_question_rule_path(@form, @question, @rule), notice: 'Rule was successfully created.' }
+        format.html { redirect_to form_question_rule_path(@form, @question, @rule), notice: t('activerecord.successful.messages.rule.created') }
         format.json { render action: 'show', status: :created, location: @rule }
       else
         format.html do
@@ -43,7 +43,7 @@ class RulesController < ApplicationController
   def update
     respond_to do |format|
       if @rule.update(rule_params)
-        format.html { redirect_to form_question_rule_path(@form, @question, @rule), notice: 'Rule was successfully updated.' }
+        format.html { redirect_to form_question_rule_path(@form, @question, @rule), notice: t('activerecord.successful.messages.rule.updated') }
         format.json { head :no_content }
       else
         format.html do

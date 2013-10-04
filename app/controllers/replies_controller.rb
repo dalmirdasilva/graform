@@ -26,7 +26,7 @@ class RepliesController < ApplicationController
 
     respond_to do |format|
       if @reply.save
-        format.html { redirect_to form_reply_url(@form, @reply), notice: 'Reply was successfully created.' }
+        format.html { redirect_to form_reply_url(@form, @reply), notice: t('activerecord.successful.messages.reply.created') }
         format.json { render action: 'show', status: :created, location: @reply }
       else
         format.html do
@@ -41,7 +41,7 @@ class RepliesController < ApplicationController
   def update
     respond_to do |format|
       if @reply.update(reply_params)
-        format.html { redirect_to form_reply_url(@form, @reply), notice: 'Reply was successfully updated.' }
+        format.html { redirect_to form_reply_url(@form, @reply), notice: t('activerecord.successful.messages.reply.updated') }
         format.json { head :no_content }
       else
         format.html do

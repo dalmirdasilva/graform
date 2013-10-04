@@ -28,7 +28,7 @@ class AnswersController < ApplicationController
 
     respond_to do |format|
       if @answer.save
-        format.html { redirect_to form_reply_answer_path(@form, @reply, @answer), notice: 'Answer was successfully created.' }
+        format.html { redirect_to form_reply_answer_path(@form, @reply, @answer), notice: t('activerecord.successful.messages.answer.created') }
         format.json { render action: 'show', status: :created, location: @answer }
       else
         flash.now[:error] = @answer.errors.full_messages
@@ -41,7 +41,7 @@ class AnswersController < ApplicationController
   def update
     respond_to do |format|
       if @answer.update(answer_params)
-        format.html { redirect_to form_reply_answer_path(@form, @reply, @answer), notice: 'Answer was successfully updated.' }
+        format.html { redirect_to form_reply_answer_path(@form, @reply, @answer), notice: t('activerecord.successful.messages.answer.updated') }
         format.json { head :no_content }
       else
         flash.now[:error] = @answer.errors.full_messages

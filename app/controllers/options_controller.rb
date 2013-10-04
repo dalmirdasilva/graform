@@ -27,7 +27,7 @@ class OptionsController < ApplicationController
     @option = @question.options.create(option_params)
     respond_to do |format|
       if @option.save
-        format.html { redirect_to form_question_option_url(@form, @question, @option), notice: 'Option was successfully created.' }
+        format.html { redirect_to form_question_option_url(@form, @question, @option), notice: t('activerecord.successful.messages.created.updated') }
         format.json { render action: 'show', status: :created, location: @option }
       else
         flash.now[:error] = @option.errors.full_messages
@@ -40,7 +40,7 @@ class OptionsController < ApplicationController
   def update
     respond_to do |format|
       if @option.update(option_params)
-        format.html { redirect_to form_question_option_url(@form, @question, @option), notice: 'Option was successfully updated.' }
+        format.html { redirect_to form_question_option_url(@form, @question, @option), notice: t('activerecord.successful.messages.option.updated') }
         format.json { head :no_content }
       else
         flash.now[:error] = @option.errors.full_messages

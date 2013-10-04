@@ -44,40 +44,52 @@ en:
   title:
     default: 
     forms:
-      index: "My forms"
-      edit: "Edit form"
+      index: My forms
+      edit: Edit form
       new: &new
-        "New form"
+        New form
       create: *new
     questions:
-      index: "Questions list"
-      edit: "Edit question"
+      index: Questions list
+      edit: Edit question
       new: &new
-        "New question"
+        New question
       create: *new
     options:
-      index: "Options list"
-      edit: "Edit option"
+      index: Options list
+      edit: Edit option
       new: &new
-        "New option"
+        New option
       create: *new
     replies:
-      index: "Replies list"
-      edit: "Edit reply"
+      index: Replies list
+      edit: Edit reply
       new: &new
-        "New reply"
+        New reply
       create: *new
     answers:
-      index: "Answers list"
-      edit: "Edit answer"
+      index: Answers list
+      edit: Edit answer
       new: &new
-        "New answer"
+        New answer
       create: *new
     rules:
-      index: "Rules list"
-      edit: "Edit rule"
+      index: Rules list
+      edit: Edit rule
       new: &new
-        "New rule"
+        New rule
+      create: *new
+    form_types:
+      index: Form types list
+      edit: Edit form type
+      new: &new
+        New form type
+      create: *new
+    question_types:
+      index: Question types list
+      edit: Edit question type
+      new: &new
+        New question type
       create: *new
 
   activerecord:
@@ -118,3 +130,11 @@ en:
           created: User was successfully created.
           updated: User was successfully updated.
           deleted: User was successfully deleted.
+        form_type:
+          created: Form type was successfully created.
+          updated: Form type was successfully updated.
+          deleted: Form type was successfully deleted.
+        question_type:
+          created: Question type was successfully created.
+          updated: Question type was successfully updated.
+          deleted: Question type was successfully deleted.

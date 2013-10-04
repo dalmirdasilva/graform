@@ -20,6 +20,10 @@ pt-BR:
   reply: &reply Réplica
   rules: &rules Regras
   rule: &rule Regra
+  form_types: &question_type Tipos de formulário
+  form_type: &question_type Tipo de formulário
+  question_types: &question_type Tipos de questão
+  question_type: &question_type Tipo de questão
 
   title:
     default: Sem tradução
@@ -64,6 +68,18 @@ pt-BR:
       edit: Editar regra
       new: &new
         Nova regra
+      create: *new
+    form_types:
+      index: Lista de tipos de formulário
+      edit: Editar tipo de formulário
+      new: &new
+        Novo tipo de formulário
+      create: *new
+    question_types:
+      index: Lista de tipos de questão
+      edit: Editar tipo de questão
+      new: &new
+        Novo tipo de questão
       create: *new
   
   helpers:
@@ -112,7 +128,15 @@ pt-BR:
           created: Usuário criado com sucesso.
           updated: Usuário atualizado com sucesso.
           deleted: Usuário removido com sucesso.
-          
+        form_type:
+          created: Tipo de formulário criado com sucesso
+          updated: Tipo de formulário atualizado com sucesso
+          deleted: Tipo de formulário removido com sucesso
+        question_type:
+          created: Tipo de questão criado com sucesso
+          updated: Tipo de questão atualizado com sucesso
+          deleted: Tipo de questão removido com sucesso
+       
     attributes: 
       form: 
         name: Nome
@@ -121,8 +145,13 @@ pt-BR:
         question_type_id: Tipo da questão
         text: Texto
       form: 
+        form_type: Tipo
         name: Nome
         description: Descrição
+      form_type: &model_type
+        code: Código
+        name: Nome
+      question_type: *model_type
         
   date:
     abbr_day_names:
