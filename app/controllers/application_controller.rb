@@ -1,8 +1,7 @@
 class ApplicationController < ActionController::Base
   
   protect_from_forgery with: :exception
-
-  layout 'application'
+  before_action :apply_layout
 
   private
   
@@ -18,5 +17,9 @@ class ApplicationController < ActionController::Base
       @current_user ||= User.find(session[:user_id]) if session[:user_id] rescue nil
     end
     
-    helper_method :current_user, :logged_in?
+    def apply_layout
+      ApplicationController::layout (params.has_key? :layout) ? params[:layout] : 'application'
+    end
+    
+    helper_method :apply_layout, :current_user, :logged_in?
 end

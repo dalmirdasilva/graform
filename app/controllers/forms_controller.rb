@@ -8,6 +8,7 @@ class FormsController < ApplicationController
   end
 
   def editor
+    @question_types = QuestionType.all
   end
 
   def show

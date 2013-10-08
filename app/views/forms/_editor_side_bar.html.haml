@@ -1,0 +1,9 @@
+%section.editor_side_bar
+  %h4 Add a question
+  %ul
+    - @question_types.each do |question_type|
+      %li
+        %button.btn.btn-default.btn-snall{:question_type_id => question_type.id}
+          %span.glyphicon.glyphicon-star
+          Add
+        = question_type.name
