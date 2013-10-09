@@ -2,11 +2,22 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-Forms =
-  initialize: () ->
-    console.log 'Initializing forms'
-    $('.editor_side_bar ul li').click (e) ->
-      e.preventDefault()
-      $(this).tab('show')
+class window.FormsClass
 
-Forms.initialize()
+  constructor: () ->
+    console.log 'Initializing forms'
+    @createComponents()
+    @attachEventListeners()
+  
+  attachEventListeners: () ->
+    @ui.addQuestionButton.click (e) =>
+      questionTypeId = parseInt $(e.target).attr 'question_type_id'
+      RestClient.get "/forms/#{window.formId}/questions/new", null, (response) ->
+        $('#form-content').append(response)
+  
+  createComponents: () ->
+    @ui =
+      addQuestionButton: $('.add-question')
+  
+$ ->
+  Forms = new FormsClass()
