@@ -21,5 +21,10 @@ class ApplicationController < ActionController::Base
       ApplicationController::layout (params.has_key? :layout) ? params[:layout] : 'application'
     end
     
+    def set_javascript_var name, value
+      @javascript_vars ||= {}
+      @javascript_vars[name] = value
+    end
+    
     helper_method :apply_layout, :current_user, :logged_in?
 end

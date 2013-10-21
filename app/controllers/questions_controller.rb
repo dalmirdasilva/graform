@@ -17,6 +17,17 @@ class QuestionsController < ApplicationController
   def new
     @question = @form.questions.new(form_id: @form.id)
   end
+  
+  def new_from_type
+    @question_type = QuestionType.find(params[:type_id])
+    @question = @form.questions.new(form_id: @form.id)
+    @question.text = "Pergunta..."
+    @question.number = @form.max_question_number  + 1
+    @question.question_type = @question_type
+    if @question.save
+      render partial: "questions/type/#{@question_type.code}/form"
+    end
+  end
 
   def edit
   end

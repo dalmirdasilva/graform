@@ -19,16 +19,20 @@ class window.RestClientClass
     
   # private
   
+  pathJoin: (one, another) ->
+    "#{one.replace /[\/\s]*$/g, ""}/#{another.replace /^[\/\s]*/g, ""}"
+
   request: (method, resource, params, callback) ->
+    url = "#{@resorceURL(resource)}.js"
     $.ajax
-      url: "#{@resorceURL(resource)}.js"
+      url: url
       data: params
       method: method
       success: (responde) =>
         callback(responde)
         
   resorceURL: (resource) ->
-    "#{@options.host}/#{resource}"
+    @pathJoin @options.host, resource
   
   confireAjax: () ->
     $.ajaxSetup

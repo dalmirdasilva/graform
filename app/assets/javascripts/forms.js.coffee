@@ -11,9 +11,12 @@ class window.FormsClass
   
   attachEventListeners: () ->
     @ui.addQuestionButton.click (e) =>
+      formId = window.form["id"]
       questionTypeId = parseInt $(e.target).attr 'question_type_id'
-      RestClient.get "/forms/#{window.formId}/questions/new", null, (response) ->
-        $('#form-content').append(response)
+      RestClient.get "/forms/#{formId}/questions/type/#{questionTypeId}/new", null, (response) ->
+        question = $(response)
+        $('#form-content').append(question)
+        question.find("input").focus()
   
   createComponents: () ->
     @ui =

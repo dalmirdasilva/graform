@@ -19,6 +19,8 @@ Graform::Application.routes.draw do
     end
   end
 
+  match 'forms/:form_id/questions/type/:type_id/new' => 'questions#new_from_type', via: [:get]
+  
   match 'logout' => 'sessions#destroy', as: :logout, via: [:get, :delete]
   get 'login' => 'sessions#new', as: :login
   get 'signup' => 'users#new', as: :signup

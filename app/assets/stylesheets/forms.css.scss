@@ -9,7 +9,9 @@
 }
 
 .editor_side_bar {
-  
+
+  position: fixed;
+  top: 60px;
   border-left: 1px solid #eee;
   padding: 0px 15px;
   

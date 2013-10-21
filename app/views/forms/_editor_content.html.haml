@@ -1,2 +1,5 @@
+%h2 Editor
 %section#form-content
-  
+  - @form.questions.each do |question|
+    - @question = question
+    = render partial: "questions/type/#{question.question_type.code}/form"

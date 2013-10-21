@@ -8,6 +8,10 @@
     = javascript_include_tag :application
     = csrf_meta_tags
     = yield(:head)
+    %script{type: "text/javascript"}
+      - @javascript_vars = {} unless @javascript_vars
+      - @javascript_vars.each do |k, v|
+        = raw "window.#{k} = #{v.to_json};"
   %body
     %header.navbar.navbar-fixed-top
       %nav.navbar-inner
