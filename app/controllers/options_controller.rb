@@ -19,6 +19,15 @@ class OptionsController < ApplicationController
   def new
     @option = @question.options.new
   end
+  
+  def new_from_type
+    @type = @question.question_type
+    @option = @question.options.new
+    @option.text = "Option..."
+    if @option.save
+      render partial: "options/type/#{@type.code}/form"
+    end
+  end
 
   def edit
   end

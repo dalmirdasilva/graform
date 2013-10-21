@@ -1,0 +1,20 @@
+<div class="question-from-type-box">
+  <h4>Questão <input type="text" class="question-number" value="<%= @question.number %>" /></h1>
+  <div>
+    <div><input type="text" value="<%= @question.text %>" class="question-text" /></div>
+    <div>
+      <button class="btn btn-default btn-snall add-option" question_id="<%= @question.id %>">Adicionar opção</button>
+      <button class="btn btn-default btn-snall save-question" question_id="<%= @question.id %>">Salvar alterações</button>
+      <button class="btn btn-default btn-snall remove-question" question_id="<%= @question.id %>">Remover questão</button>
+    </div>
+    <div class="options">
+      <div>Opções: </div>
+      <div class="options-container">
+      <% @question.options.each do |option| %>
+        <% @option = option %>
+        <%= render partial: "options/type/#{@question.question_type.code}/form" %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>

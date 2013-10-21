@@ -7,7 +7,7 @@ class Form < ActiveRecord::Base
   validates :description, presence: true
   
   def max_question_number
-    Question.where(:form_id => id).order('number DESC').limit(1).first.number
+    Question.where(:form_id => id).order('number DESC').limit(1).first.number || 0
   rescue => e
     0
   end

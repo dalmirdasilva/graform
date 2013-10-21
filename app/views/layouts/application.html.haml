@@ -7,12 +7,14 @@
     = stylesheet_link_tag :application, :media => "all"
     = javascript_include_tag :application
     = csrf_meta_tags
+    = javascript_tag "var csrf_token = '#{form_authenticity_token}';" if protect_against_forgery?
     = yield(:head)
     %script{type: "text/javascript"}
       - @javascript_vars = {} unless @javascript_vars
       - @javascript_vars.each do |k, v|
         = raw "window.#{k} = #{v.to_json};"
   %body
+    = image_tag 'loader.gif', id: 'loader'
     %header.navbar.navbar-fixed-top
       %nav.navbar-inner
         .container

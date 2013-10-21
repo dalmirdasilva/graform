@@ -1,3 +1,11 @@
 // Place all the styles related to the options controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.option-box {
+  padding: 2px 4px;
+  
+  input {
+    margin-bottom: 0px;
+  }
+}

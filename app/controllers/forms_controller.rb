@@ -9,7 +9,7 @@ class FormsController < ApplicationController
 
   def editor
     @question_types = QuestionType.all
-    @form = Form.find(params[:form_id])
+    @form = Form.find params[:form_id]
     set_javascript_var :form, @form
   end
 

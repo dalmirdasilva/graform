@@ -33,6 +33,7 @@ class QuestionsController < ApplicationController
   end
 
   def create
+    sleep 1
     @question = @form.questions.new(question_params)
 
     respond_to do |format|
@@ -48,10 +49,11 @@ class QuestionsController < ApplicationController
   end
 
   def update
+    sleep 1
     respond_to do |format|
       if @question.update(question_params)
         format.html { redirect_to form_question_url(@form, @question), notice: t('activerecord.successful.messages.question.updated') }
-        format.json { head :no_content }
+        format.json { render json: {status: 'OK'} }
       else
         flash.now[:error] = @question.errors.full_messages
         format.html { render action: 'edit' }
@@ -61,10 +63,11 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
+    sleep 1
     @question.destroy
     respond_to do |format|
       format.html { redirect_to form_questions_url(@form) }
-      format.json { head :no_content }
+      format.json { render json: {status: 'OK'} }
     end
   end
 
@@ -75,6 +78,6 @@ class QuestionsController < ApplicationController
     end
 
     def question_params
-      params.require(:question).permit(:question_type_id, :text)
+      params.require(:question).permit(:question_type_id, :text, :number)
     end
 end

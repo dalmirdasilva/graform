@@ -1,6 +1,15 @@
 /**
  *= require_tree .
  */
+ 
+#loader {
+  display: none;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+}
 
 #main_side_bar {
   position: fixed;

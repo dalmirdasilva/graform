@@ -38,14 +38,10 @@ ActiveRecord::Schema.define(version: 20131016234125) do
   end
 
   create_table "options", force: true do |t|
+    t.integer  "question_id"
     t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "options_questions", force: true do |t|
-    t.integer "option_id"
-    t.integer "question_id"
   end
 
   create_table "question_types", force: true do |t|

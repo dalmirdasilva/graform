@@ -4,6 +4,9 @@ Graform::Application.routes.draw do
   resources :question_types
   resources :users
   resources :sessions
+
+  match 'forms/:form_id/questions/type/:type_id/new' => 'questions#new_from_type', via: [:get]
+  match 'forms/:form_id/questions/:question_id/options/new_from_type' => 'options#new_from_type', via: [:get]
   
   resources :forms do
     
@@ -18,8 +21,6 @@ Graform::Application.routes.draw do
       resources :options
     end
   end
-
-  match 'forms/:form_id/questions/type/:type_id/new' => 'questions#new_from_type', via: [:get]
   
   match 'logout' => 'sessions#destroy', as: :logout, via: [:get, :delete]
   get 'login' => 'sessions#new', as: :login
