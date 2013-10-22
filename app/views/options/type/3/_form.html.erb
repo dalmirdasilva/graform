@@ -1,5 +1,7 @@
-<div option_id="<%= @option.id %>" class="option-box">
-    <input type='radio' name='group-<%= @question.id %>'> &nbsp;
-    <input type='text' value='<%= @option.text %>'>  &nbsp;
-    <button class="btn btn-default btn-snall  save-option">Save</button>
+<div class="option-box">
+  <input type='radio' name='group-<%= @question.id %>'>&nbsp;
+  <input type='text' class="option-text" value='<%= @option.text %>'>&nbsp;
+  <button class="btn btn-default btn-snall save-option" question_id="<%= @question.id %>" option_id="<%= @option.id %>">Salvar</button>&nbsp;
+  <button class="btn btn-default btn-snall remove-option" question_id="<%= @question.id %>" option_id="<%= @option.id %>">Remover</button>&nbsp;
+  <button class="btn btn-default btn-snall edi-rule" question_id="<%= @question.id %>" option_id="<%= @option.id %>">Editar regra</button>
 </div>

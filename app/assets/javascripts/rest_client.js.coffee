@@ -29,7 +29,7 @@ class window.RestClientClass
     url = "#{@resorceURL(resource)}"
     $.ajax
       url: url
-      data: JSON.stringify params
+      data: JSON.stringify params if params
       method: method
       success: (responde) =>
         callback(responde)
@@ -43,7 +43,7 @@ class window.RestClientClass
       async: true
       timeout: @options.ajaxTimeout
       error: (xhr, ajaxOptions, thrownError) =>
-        console.log "Error: #{thrownError}"
+        console.log "Error: #{xhr} | #{ajaxOptions} | #{thrownError}"
       beforeSend: (xhr, settings) =>
         console.log "beforeSend"
         $('#loader').show()

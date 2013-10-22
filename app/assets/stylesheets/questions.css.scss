@@ -2,28 +2,51 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.question-from-type-box {
+.question-box {
+
+  .question-preview-box {
+    border-radius: 4px;
+    background: #fff;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    margin: -8px;
+    padding: 0px 8px 8px 8px;
+    margin-bottom: 8px;
+    margin-top: -18px;
+    input {
+      margin-top: -2px;
+    }
+    .hide-preview {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+    }
+  }
   
   &:hover {
-    background-color: #efefef;
+    box-shadow: 0px 0px 8px #ccc;
   }
 
+  background-color: #fcfcfc;
   position: relative;
-  border-bottom: 1px solid #ddd;
-  padding: 4px 10px;
-  margin: 0px;
+  border: 1px solid #dedede;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
   
   input.question-number {
-    height: 16px;
-    width: 30px; 
-    margin-top: 8px;
+    margin-bottom: 0px;
+    width: 30px;
   }
   
-  input.question-text {
-    width: 400px; 
+  textarea {
+    width: 600px;
+    height: 80px;
   }
   
   .options {
-    padding: 10px 0px;
+    div {
+      padding: 6px 0px;
+    }
   }
 }

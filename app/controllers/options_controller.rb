@@ -50,7 +50,7 @@ class OptionsController < ApplicationController
     respond_to do |format|
       if @option.update(option_params)
         format.html { redirect_to form_question_option_url(@form, @question, @option), notice: t('activerecord.successful.messages.option.updated') }
-        format.json { head :no_content }
+        format.json { render json: {success: 'OK'} }
       else
         flash.now[:error] = @option.errors.full_messages
         format.html { render action: 'edit' }
@@ -63,7 +63,7 @@ class OptionsController < ApplicationController
     @option.destroy
     respond_to do |format|
       format.html { redirect_to form_question_options_url(@form, @question) }
-      format.json { head :no_content }
+      format.json { render json: {success: 'OK'} }
     end
   end
 

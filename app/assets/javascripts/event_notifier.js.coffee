@@ -11,11 +11,12 @@ window.EventNotifier =
     i = 0
     while i < @callbacks[name].length
       callback = @callbacks[name][i]
-      try
-        callback arguments[1], arguments[2], arguments[3], arguments[4], arguments[5], arguments[6]
+      callback arguments[1], arguments[2], arguments[3], arguments[4], arguments[5], arguments[6]
       i++
 
   attach: (name, callback) ->
-    @_init name
-    @callbacks[name].push callback  if @callbacks[name]
+    names = name.split ' '
+    for name in names
+      @_init name
+      @callbacks[name].push callback  if @callbacks[name]
 

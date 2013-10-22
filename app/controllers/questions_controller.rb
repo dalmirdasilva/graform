@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
 
   include FormResource
   
-  before_action :set_question, only: [:show, :edit, :update, :destroy]
+  before_action :set_question, only: [:show, :show_preview, :edit, :update, :destroy]
   before_action :login_required!
 
   def index
@@ -16,6 +16,10 @@ class QuestionsController < ApplicationController
 
   def new
     @question = @form.questions.new(form_id: @form.id)
+  end
+  
+  def show_preview
+    render partial: "questions/type/#{@question.question_type.code}/show"
   end
   
   def new_from_type
@@ -53,7 +57,7 @@ class QuestionsController < ApplicationController
     respond_to do |format|
       if @question.update(question_params)
         format.html { redirect_to form_question_url(@form, @question), notice: t('activerecord.successful.messages.question.updated') }
-        format.json { render json: {status: 'OK'} }
+        format.json { render json: {success: 'OK'} }
       else
         flash.now[:error] = @question.errors.full_messages
         format.html { render action: 'edit' }
@@ -67,7 +71,7 @@ class QuestionsController < ApplicationController
     @question.destroy
     respond_to do |format|
       format.html { redirect_to form_questions_url(@form) }
-      format.json { render json: {status: 'OK'} }
+      format.json { render json: {success: 'OK'} }
     end
   end
 

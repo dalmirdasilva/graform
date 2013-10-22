@@ -6,6 +6,7 @@ Graform::Application.routes.draw do
   resources :sessions
 
   match 'forms/:form_id/questions/type/:type_id/new' => 'questions#new_from_type', via: [:get]
+  match 'forms/:form_id/questions/:id/show_preview' => 'questions#show_preview', via: [:get]
   match 'forms/:form_id/questions/:question_id/options/new_from_type' => 'options#new_from_type', via: [:get]
   
   resources :forms do
