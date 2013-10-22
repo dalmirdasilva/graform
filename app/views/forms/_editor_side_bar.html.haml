@@ -1,8 +1,15 @@
 %section.editor_side_bar
-  %h4 Addicionar questão
+  %h4 Adicionar questão
   %ul
     - @question_types.each do |question_type|
       %li
         %button.btn.btn-default.btn-snall.add-question{:question_type_id => question_type.id}
           Adicionar
         = question_type.name
+
+  %h4 Preferências
+  %ul
+    %li
+      Link para respoder esse formulário:
+      = link_to 'Criar nova resposta', @form.public_link
+      

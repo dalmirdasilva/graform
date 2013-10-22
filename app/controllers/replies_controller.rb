@@ -18,6 +18,13 @@ class RepliesController < ApplicationController
     @reply = @form.replies.build
   end
 
+  def new_of_type
+    @reply = @form.replies.build(form_id: @form.id)
+    @question = @form.first_question
+    set_javascript_var :form, @form
+    render "replies/type/1/reply"
+  end
+
   def edit
   end
 

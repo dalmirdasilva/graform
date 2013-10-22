@@ -1,7 +1,7 @@
 class window.RestClientClass
   
   options:
-    host: "http://localhost:3000/"
+    host: "http://192.168.6.12:3000/"
     ajaxTimeout: 10000
   
   constructor: (@host) ->

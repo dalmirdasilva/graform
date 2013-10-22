@@ -1,0 +1,10 @@
+<div class="reply-box">
+  <h2><%= @form.name %></h2>
+  <h5>Responda a questão abaixo e clique em 'próxima' para ir para a próxima questão</h5>
+  <div class="reply-question-box">
+    <%= render partial: "questions/type/#{@question.question_type.code}/show" %>
+  </div>
+  <div class="reply-action-box">
+    <button class="btn btn-default btn-snall reply-next-question">Próxima questão</button>
+  </div>
+</div>

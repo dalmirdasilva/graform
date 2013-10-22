@@ -7,7 +7,13 @@ Graform::Application.routes.draw do
 
   match 'forms/:form_id/questions/type/:type_id/new' => 'questions#new_from_type', via: [:get]
   match 'forms/:form_id/questions/:id/show_preview' => 'questions#show_preview', via: [:get]
+  match 'forms/:form_id/questions/:id/next_question' => 'questions#next_question', via: [:get]
+  match 'forms/:form_id/replies/new_of_type' => 'replies#new_of_type', via: [:get]
   match 'forms/:form_id/questions/:question_id/options/new_from_type' => 'options#new_from_type', via: [:get]
+  
+  match 'logout' => 'sessions#destroy', as: :logout, via: [:get, :delete]
+  get 'login' => 'sessions#new', as: :login
+  get 'signup' => 'users#new', as: :signup
   
   resources :forms do
     
@@ -18,14 +24,11 @@ Graform::Application.routes.draw do
     end
     
     resources :questions do
+      
       resources :rules
       resources :options
     end
   end
-  
-  match 'logout' => 'sessions#destroy', as: :logout, via: [:get, :delete]
-  get 'login' => 'sessions#new', as: :login
-  get 'signup' => 'users#new', as: :signup
 
   root 'sessions#new', as: :root
   

@@ -15,6 +15,9 @@
     margin-top: -18px;
     input {
       margin-top: -2px;
+      &[type="text"] {
+        width: 600px;
+      }
     }
     .hide-preview {
       position: absolute;

@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
 
   include FormResource
   
-  before_action :set_question, only: [:show, :show_preview, :edit, :update, :destroy]
+  before_action :set_question, only: [:show, :show_preview, :next_question, :edit, :update, :destroy]
   before_action :login_required!
 
   def index
@@ -31,6 +31,23 @@ class QuestionsController < ApplicationController
     if @question.save
       render partial: "questions/type/#{@question_type.code}/form"
     end
+  end
+  
+  def next_question
+    @next_question = catch :next do
+      answer = @question.answers.where(reply_id: params[:reply_id]).first
+      throw :next, @question.next_question unless answer
+      option = answer.option
+      throw :next, @question.next_question unless option
+      rule = @question.rules.where(option_id: option.id).first
+      throw :next, @question.next_question unless rule
+      next_question = rule.next_question
+      throw :next, @question.next_question unless next_question
+      next_question
+    end
+    render text: 'the end' unless @next_question
+    @question = @next_question
+    render partial: "questions/type/#{@question.question_type.code}/show"
   end
 
   def edit
