@@ -45,9 +45,13 @@ class QuestionsController < ApplicationController
       throw :next, @question.next_question unless next_question
       next_question
     end
-    render text: 'the end' unless @next_question
-    @question = @next_question
-    render partial: "questions/type/#{@question.question_type.code}/show"
+    
+    if @next_question
+      @question = @next_question
+      render partial: "questions/type/#{@question.question_type.code}/show"
+    else
+      render text: 'the end'
+    end
   end
 
   def edit

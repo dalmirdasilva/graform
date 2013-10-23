@@ -7,8 +7,8 @@
     display: none;
   }
   
-  input[type="radio"] {
-    margin-top: -2px;
+  input[type="radio"], input[type="checkbox"] {
+    margin-top: -3px;
   }
   
   .reply-action-box {

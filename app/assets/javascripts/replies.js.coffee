@@ -20,7 +20,7 @@ class window.RepliesClass
       ctx = {}
       @setEventContext event, ctx
       params = @getQuestionParams()
-      RestClient.get "/form/#{ctx.formId}/questions/#{ctx.questionId}/next_question", params, (response) ->
+      RestClient.get "/forms/#{ctx.formId}/questions/#{ctx.questionId}/next_question", params, (response) =>
         question = $ response
         @ui.replyQuestionBox.html question
         question.find("input").focus()
@@ -32,7 +32,7 @@ class window.RepliesClass
   setEventContext: (event, ctx) ->
     ctx.target = $ event.target
     ctx.formId = window.form['id']
-    ctx.questionId = parseInt @ui.replyQuestionBox 'question_id'
+    ctx.questionId = parseInt @ui.replyQuestionBox.find('.question-preview-box').attr 'question_id'
   
   createComponents: () ->
     @ui =
