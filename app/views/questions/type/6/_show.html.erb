@@ -1,11 +1,8 @@
 <div class="question-preview-box" question_id="<%= @question.id %>">
   <button class="btn btn-default btn-snall hide-preview">Fechar preview</button>
-  <h3>
-    Questão <%= @question.number %>
-  </h3>
+  <h3>Questão <%= @question.number %></h3>
   <h4><%= @question.text %></h4>
   <div>
     <%= render partial: "options/type/#{@question.question_type.code}/show" %>
   </div>
 </div>
-
