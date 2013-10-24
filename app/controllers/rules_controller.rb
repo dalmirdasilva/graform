@@ -15,7 +15,13 @@ class RulesController < ApplicationController
 
   def show
   end
-
+  
+  def new_by_question
+    @option = Option.find(params[:option_id])
+    @rule = @question.rules.new(question_id: @question.id, option_id: @option.id)
+    render partial: "rules/new_by_question_form"
+  end
+  
   def new
     @rule = @question.rules.new
   end
@@ -44,7 +50,7 @@ class RulesController < ApplicationController
     respond_to do |format|
       if @rule.update(rule_params)
         format.html { redirect_to form_question_rule_path(@form, @question, @rule), notice: t('activerecord.successful.messages.rule.updated') }
-        format.json { head :no_content }
+        format.json { render json: {success: 'OK'} }
       else
         format.html do
           flash.now[:error] = @rule.errors.full_messages
@@ -59,7 +65,7 @@ class RulesController < ApplicationController
     @rule.destroy
     respond_to do |format|
       format.html { redirect_to form_question_rules_path(@form, @question) }
-      format.json { head :no_content }
+      format.json { render json: {success: 'OK'} }
     end
   end
 

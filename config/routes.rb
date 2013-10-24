@@ -10,6 +10,7 @@ Graform::Application.routes.draw do
   match 'forms/:form_id/questions/:id/next_question' => 'questions#next_question', via: [:get]
   match 'forms/:form_id/replies/new_of_type' => 'replies#new_of_type', via: [:get]
   match 'forms/:form_id/questions/:question_id/options/new_from_type' => 'options#new_from_type', via: [:get]
+  match 'forms/:form_id/questions/:question_id/rules/new_by_question' => 'rules#new_by_question', via: [:get]
   
   match 'logout' => 'sessions#destroy', as: :logout, via: [:get, :delete]
   get 'login' => 'sessions#new', as: :login
