@@ -16,12 +16,16 @@ class window.RepliesClass
     @ui.replyNextQuestionButton.click (event) =>
       ctx = {}
       @setEventContext event, ctx
-      params = @getQuestionParams()
-      RestClient.get "/forms/#{ctx.formId}/questions/#{ctx.questionId}/next_question", params, (response) =>
-        question = $ response
-        @ui.replyQuestionBox.html question
-        question.find("input").focus()
-        EventNotifier.notify "nextQuestionLoaded"
+      params =
+        question_id: ctx.questionId,
+        option_id: ctx.replyId
+      RestClient.post "/forms/#{ctx.formId}/replies/#{ctx.replyId}/answers", params, (response) =>
+        console.log response
+        RestClient.get "/forms/#{ctx.formId}/questions/#{ctx.questionId}/next_question", {}, (response) =>
+          question = $ response
+          @ui.replyQuestionBox.html question
+          question.find("input").focus()
+          EventNotifier.notify "nextQuestionLoaded"
   
   getQuestionParams: () ->
     ""
@@ -30,6 +34,7 @@ class window.RepliesClass
     ctx.target = $ event.target
     ctx.formId = window.form['id']
     ctx.questionId = parseInt @ui.replyQuestionBox.find('.question-preview-box').attr 'question_id'
+    ctx.replyId = parseInt ctx.target.parents().find('.reply-box').attr 'reply_id'
   
   createComponents: () ->
     @ui =

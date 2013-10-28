@@ -6,7 +6,7 @@ class window.OptionClass
 
   constructor: () ->
     @setupUiElements()
-    EventNotifier.attach "addOption", () =>
+    EventNotifier.attach 'addOption', () =>
       @setupUiElements()
     
   setupUiElements: () ->

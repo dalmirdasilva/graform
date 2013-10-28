@@ -1,3 +1,5 @@
 <div class="rule-box" rule_id="<%= @rule.id %>" question_id="<%= @question.id %>">
-  <span>Próxima questão: <input type="text" name="next-question-number" /></span>
+  <span>Próxima questão: <input type="text" value="<%= @rule.next_question ? @rule.next_question.number : @question.number + 1 %>" class="rule-next-question-number" name="next-question-number" /></span> 
+  <button class="btn btn-default btn-snall save-rule">Salvar</button> 
+  <button class="btn btn-default btn-snall remove-rule">Remover</button>
 </div>

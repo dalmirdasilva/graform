@@ -20,9 +20,10 @@ class RepliesController < ApplicationController
 
   def new_of_type
     @reply = @form.replies.build(form_id: @form.id)
+    @reply.save
     @question = @form.first_question
     set_javascript_var :form, @form
-    render "replies/type/1/reply"
+    render "replies/type/#{@form.form_type.code}/reply"
   end
 
   def edit

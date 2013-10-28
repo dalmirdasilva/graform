@@ -7,29 +7,29 @@ class window.RestClientClass
   constructor: (@host) ->
     @options.host = @host
     @confireAjax()
-    
+
   get: (resource, params, callback) ->
     @request("GET", resource, params, callback)
-    
+
   put: (resource, params, callback) ->
     @request("PUT", resource, params, callback)
-    
+
   post: (resource, params, callback) ->
     @request("POST", resource, params, callback)
-  
+
   delete: (resource, params, callback) ->
     @request("DELETE", resource, params, callback)
 
   # private
-  
   pathJoin: (one, another) ->
     "#{one.replace /[\/\s]*$/g, ""}/#{another.replace /^[\/\s]*/g, ""}"
 
   request: (method, resource, params, callback) ->
     url = "#{@resorceURL(resource)}"
+    params = JSON.stringify params if params and method != 'GET'
     $.ajax
       url: url
-      data: JSON.stringify params if params
+      data: params
       method: method
       success: (responde) =>
         callback(responde)
@@ -46,6 +46,7 @@ class window.RestClientClass
         console.log "Error: #{xhr} | #{ajaxOptions} | #{thrownError}"
       beforeSend: (xhr, settings) =>
         console.log "beforeSend"
+        console.log xhr
         $('#loader').show()
         xhr.setRequestHeader "X-CSRF-Token", csrf_token
       complete: (xhr, settings) =>

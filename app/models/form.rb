@@ -12,13 +12,13 @@ class Form < ActiveRecord::Base
     0
   end
   
-  def public_link
-    "/forms/#{id}/replies/new_of_type"
-  end
-  
   def first_question
     Question.where(:form_id => id).order('number ASC').limit(1).first
   rescue => e
     nil
+  end
+  
+  def public_link
+    "/forms/#{id}/replies/new_of_type"
   end
 end

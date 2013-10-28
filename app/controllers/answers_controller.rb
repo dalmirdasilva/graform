@@ -29,7 +29,7 @@ class AnswersController < ApplicationController
     respond_to do |format|
       if @answer.save
         format.html { redirect_to form_reply_answer_path(@form, @reply, @answer), notice: t('activerecord.successful.messages.answer.created') }
-        format.json { render action: 'show', status: :created, location: @answer }
+        format.json { render json: { status: 'OK' } }
       else
         flash.now[:error] = @answer.errors.full_messages
         format.html { render action: 'new' }
