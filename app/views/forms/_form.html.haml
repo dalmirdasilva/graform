@@ -1,5 +1,8 @@
 = form_for @form, html: { class: 'form-horizontal'} do |f|
-  = f.hidden_field :form_type_id, value: 1
+  .field.control-group
+    = f.label :form_type, {class: 'control-label'}
+    .controls
+      = f.collection_select :form_type_id, FormType.order(:name).collect{|form_type| Struct.new(:id, :name).new form_type.id, t("title.form_types.names.#{form_type.name}") }, :id, :name, class: 'span5'
   .field.control-group
     = f.label :name, {class: 'control-label'}
     .controls

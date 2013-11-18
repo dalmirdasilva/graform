@@ -28,7 +28,7 @@ class FormsController < ApplicationController
     @form.user = current_user
     respond_to do |format|
       if @form.save
-        format.html { redirect_to @form, notice: t('activerecord.successful.messages.form.created') }
+        format.html { redirect_to form_editor_path(@form), notice: t('activerecord.successful.messages.form.created') }
         format.json { render action: 'editor', status: :created, location: @form }
       else
         flash.now[:error] = @form.errors.full_messages

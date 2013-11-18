@@ -5,7 +5,7 @@
       %li
         %button.btn.btn-default.btn-snall.add-question{:question_type_id => question_type.id}
           Adicionar
-        = question_type.name
+        = t("title.question_types.names.#{question_type.name}")
 
   %h4 Preferências
   %ul

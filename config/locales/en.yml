@@ -22,6 +22,7 @@
 en:
 
   save: Save
+  register: Registrar
   cancel: Cancel
   all: All
   edit: Edit
@@ -85,12 +86,20 @@ en:
       new: &new
         New form type
       create: *new
+      names:
+        'conditional': 'Conditional'
+        'continuous': 'Continuous'
     question_types:
       index: Question types list
       edit: Edit question type
       new: &new
         New question type
       create: *new
+      question_types.names:
+        'single_line': 'Single line'
+        'mutiple_choice': 'Mutiple choice'
+        'checkboxes': 'Checkboxes'
+        'paragraph': 'Paragraph'
 
   activerecord:
     models:

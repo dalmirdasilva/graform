@@ -11,5 +11,6 @@
     = "#{replies} replies"
 
 .btn-group.pull-right
-  = link_to 'Edit', edit_form_path(@form), { class: 'btn btn-mini' }
-  = link_to 'All', forms_path, { class: 'btn btn-mini' }
+  = link_to t('editor'), form_editor_path(@form), { class: 'btn btn-mini' }
+  = link_to t('edit'), edit_form_path(@form), { class: 'btn btn-mini' }
+  = link_to t('all'), forms_path, { class: 'btn btn-mini' }

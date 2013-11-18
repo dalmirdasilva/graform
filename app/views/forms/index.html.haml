@@ -10,9 +10,9 @@
         - replies = form.replies ? form.replies.size : 0
         - questions = form.questions ? form.questions.size : 0
         %a.badge{href: form_questions_url(form)}
-          = "#{questions} questions"
+          = "#{questions} #{t('questions').downcase}"
         %a.badge{href: form_replies_url(form)}
-          = "#{replies} replies"
+          = "#{replies} #{t('replies').downcase}"
       %p.text-justify
         = form.description
       %p

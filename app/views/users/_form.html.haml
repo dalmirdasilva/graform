@@ -17,6 +17,6 @@
       = f.password_field :password_confirmation, {class: 'span3'}
   .field.control-group
     .controls
-      = f.submit @user.id ? 'Save' : 'Register', class: 'btn btn-small'
+      = f.submit @user.id ? t('save') : t('register'), class: 'btn btn-small'
       - if logged_in?
         = link_to 'Cancel', user_path(@user)

@@ -27,6 +27,11 @@ pt-BR:
 
   title:
     default: Sem tradução
+    users:
+      edit: Editar usuário
+      new: &new
+        Criar conta
+      create: *new
     forms:
       index: Meus formulários
       edit: Editar formulário
@@ -45,6 +50,11 @@ pt-BR:
       new:  &new
         Nova tipo de questão
       create: *new
+      names:
+        'single_line': 'Linha única'
+        'mutiple_choice': 'Múltipla escolha'
+        'checkboxes': 'Checkboxes'
+        'paragraph': 'Parágrafo'
     options:
       index: Lista de opções
       edit: Editar opção
@@ -55,7 +65,7 @@ pt-BR:
       index: Lista de réplicas
       edit: Editar réplica
       new: &new
-        Novo réplica
+        Nova réplica
       create: *new
     answers:
       index: Lista de respostas
@@ -75,12 +85,9 @@ pt-BR:
       new: &new
         Novo tipo de formulário
       create: *new
-    question_types:
-      index: Lista de tipos de questão
-      edit: Editar tipo de questão
-      new: &new
-        Novo tipo de questão
-      create: *new
+      names:
+        'conditional': 'Condicional'
+        'continuous': 'Contínuo'
   
   helpers:
     select:
