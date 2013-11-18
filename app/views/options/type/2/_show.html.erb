@@ -1,4 +1,7 @@
 <div>
-  <input type='text' name='text-<%= @question.id %>' id='id-<%= @question.id %>' />
+  <label id='group-<%= @question.id %>-<%= @option.id %>'>
+    <input type='radio' name='group-<%= @question.id %>' id='id-<%= @question.id %>-<%= @option.id %>' />
+    <%= @option.text %>
+  </label>
 </div>
 

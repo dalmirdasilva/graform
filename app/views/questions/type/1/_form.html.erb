@@ -8,17 +8,5 @@
   </h1>
   <div>
     <textarea class="question-text"><%= @question.text %></textarea>
-    <div class="options">
-      <div>
-        <span>Opções:</span>
-        <button class="btn btn-default btn-snall add-option" question_id="<%= @question.id %>">Adicionar opção</button>
-      </div>
-      <div class="options-container">
-      <% @question.options.each do |option| %>
-        <% @option = option %>
-        <%= render partial: "options/type/#{@question.question_type.code}/form" %>
-      <% end %>
-      </div>
-    </div>
   </div>
 </div>

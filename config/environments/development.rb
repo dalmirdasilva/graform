@@ -28,3 +28,5 @@ Graform::Application.configure do
   config.assets.debug = true
   config.assets.enabled = true
 end
+
+HOST_AND_PORT="http://localhost:3000"

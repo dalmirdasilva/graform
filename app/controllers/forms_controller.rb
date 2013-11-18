@@ -66,6 +66,6 @@ class FormsController < ApplicationController
     end
 
     def form_params
-      params.require(:form).permit(:name, :description, :user_id, :form_type_id)
+      p = params.require(:form).permit(:name, :description, :user_id, :form_type_id)
     end
 end

@@ -5,7 +5,12 @@
   </h3>
   <h4><%= @question.text %></h4>
   <div>
-    <%= render partial: "options/type/#{@question.question_type.code}/show" %>
+    <div>
+      <% @question.options.each do |option| %>
+        <% @option = option %>
+        <%= render partial: "options/type/#{@question.question_type.code}/show" %>
+      <% end %>
+    </div>
   </div>
 </div>
 
