@@ -1,6 +1,8 @@
 %h2 Relatório
 %h5 
   = @form.name
+%a.badge
+  = "#{@form.replies.size} respostas"
 %section
   - @anwser_count = 0
   - @form.replies.each do |reply|

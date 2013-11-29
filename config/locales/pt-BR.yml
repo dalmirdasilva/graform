@@ -8,6 +8,7 @@ pt-BR:
   delete: Deletar
   destroy: Destruir
   report: Relatório
+  copy: Duplicar
   show: Mostrar
   form: &form Formulário
   forms: &forms Formulários

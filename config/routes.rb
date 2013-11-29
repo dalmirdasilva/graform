@@ -21,6 +21,7 @@ Graform::Application.routes.draw do
     
     get :editor
     get :report
+    get :copy
   
     resources :replies do
       resources :answers

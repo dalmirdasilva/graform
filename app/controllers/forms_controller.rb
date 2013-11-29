@@ -1,6 +1,6 @@
 class FormsController < ApplicationController
 
-  before_action :set_form, only: [:show, :edit, :update, :destroy, :editor, :report]
+  before_action :set_form, only: [:copy, :show, :edit, :update, :destroy, :editor, :report]
   before_action :login_required!, only: [:index, :show, :edit, :update, :destroy]
   
   def index
@@ -22,6 +22,31 @@ class FormsController < ApplicationController
   end
 
   def edit
+  end
+  
+  def copy
+    @form_clone = @form.dup
+    @form_clone.save
+    questions = @form.questions
+    questions.each do |question|
+      question_clone = question.dup
+      question_clone.form_id = @form_clone.id
+      question_clone.save
+      options = question.options
+      options.each do |option|
+        option_clone = option.dup
+        option_clone.question_id = question_clone.id
+        option_clone.save
+        rules = Rule.where(question_id: question.id, option_id: option.id)
+        rules.each do |rule|
+          rule_clone = rule.dup
+          rule_clone.question_id = question_clone.id
+          rule_clone.option_id = option_clone.id
+          rule_clone.save
+        end
+      end
+    end
+    redirect_to controller: :forms, action: :index
   end
 
   def create
