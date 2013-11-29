@@ -35,4 +35,4 @@ Graform::Application.configure do
   config.active_support.deprecation = :stderr
 end
 
-HOST_AND_PORT="http://localhost:3000"
+HOST_AND_PORT="http://www.dalmirdasilva.com:3000"
