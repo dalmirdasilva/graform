@@ -17,3 +17,14 @@
 .close-to-left {
   margin-left: 0px;
 }
+
+body {
+  &.noheader {
+    margin-top: 0px;
+    padding-top: 20px;
+  }
+}
+
+.opaque {
+  color: #aaa;
+}

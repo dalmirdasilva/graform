@@ -23,7 +23,7 @@ class RepliesController < ApplicationController
     @reply.save
     @question = @form.first_question
     set_javascript_var :form, @form
-    render "replies/type/#{@form.form_type.code}/reply"
+    render "replies/type/#{@form.form_type.code}/reply", layout: 'clean'
   end
 
   def edit

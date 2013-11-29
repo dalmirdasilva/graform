@@ -34,23 +34,27 @@ class QuestionsController < ApplicationController
   end
   
   def next_question
-    @next_question = catch :next do
-      answer = @question.answers.where(reply_id: params[:reply_id]).first
-      throw :next, @question.next_question unless answer
-      option = answer.option
-      throw :next, @question.next_question unless option
-      rule = @question.rules.where(option_id: option.id).first
-      throw :next, @question.next_question unless rule
-      next_question = rule.next_question
-      throw :next, @question.next_question unless next_question
-      next_question
+  
+    unless @question.is_last
+      reply_id = params[:reply_id]
+      @next_question = catch :next do
+        answer = @question.answers.where(reply_id: reply_id).first
+        throw :next, @question.next_question(reply_id) unless answer
+        option = answer.option
+        throw :next, @question.next_question(reply_id) unless option
+        rule = @question.rules.where(option_id: option.id).first
+        throw :next, @question.next_question(reply_id) unless rule
+        next_question = rule.next_question
+        throw :next, @question.next_question(reply_id) unless next_question
+        next_question
+      end
     end
     
     if @next_question
       @question = @next_question
       render partial: "questions/type/#{@question.question_type.code}/show"
     else
-      render text: 'the end'
+      render text: ''
     end
   end
 
@@ -58,7 +62,6 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    sleep 1
     @question = @form.questions.new(question_params)
 
     respond_to do |format|
@@ -74,8 +77,8 @@ class QuestionsController < ApplicationController
   end
 
   def update
-    sleep 1
     respond_to do |format|
+      puts question_params
       if @question.update(question_params)
         format.html { redirect_to form_question_url(@form, @question), notice: t('activerecord.successful.messages.question.updated') }
         format.json { render json: {success: 'OK'} }
@@ -88,7 +91,6 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    sleep 1
     @question.destroy
     respond_to do |format|
       format.html { redirect_to form_questions_url(@form) }
@@ -103,6 +105,6 @@ class QuestionsController < ApplicationController
     end
 
     def question_params
-      params.require(:question).permit(:question_type_id, :text, :number)
+      params.require(:question).permit(:question_type_id, :text, :number, :is_first, :is_last)
     end
 end

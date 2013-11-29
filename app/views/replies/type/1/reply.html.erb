@@ -1,6 +1,7 @@
+<h2>Graform</h2>
 <div class="reply-box" reply_id="<%= @reply.id %>">
-  <h2><%= @form.name %></h2>
-  <h5>Responda a questão abaixo e clique em 'próxima' para ir para a próxima questão</h5>
+  <h3><%= @form.name %></h3>
+  <h5 class="opaque">Responda a questão abaixo e clique em 'próxima' para ir para a próxima questão</h5>
   <div class="reply-question-box">
     <%= render partial: "questions/type/#{@question.question_type.code}/show" %>
   </div>

@@ -25,7 +25,6 @@ class AnswersController < ApplicationController
 
   def create
     @answer = @reply.answers.create(answer_params)
-
     respond_to do |format|
       if @answer.save
         format.html { redirect_to form_reply_answer_path(@form, @reply, @answer), notice: t('activerecord.successful.messages.answer.created') }

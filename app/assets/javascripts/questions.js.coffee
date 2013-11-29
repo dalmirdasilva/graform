@@ -22,10 +22,14 @@ class window.QuestionsClass
       ctx.target.disable()
       questionNumber = ctx.questionBox.find('.question-number').first().val()
       questionText = ctx.questionBox.find('.question-text').first().val()
+      questionIsFirst = ctx.questionBox.find('.question-is-first').is(':checked')
+      questionIsLast = ctx.questionBox.find('.question-is-last').is(':checked')
       params = 
         question:
           number: questionNumber
           text: questionText
+          is_first: questionIsFirst
+          is_last: questionIsLast
       @ui.loaderSpin.appendTo ctx.questionBox
       ctx.target.enable()
       RestClient.put "/forms/#{ctx.formId}/questions/#{ctx.questionId}.json", params, (response) ->

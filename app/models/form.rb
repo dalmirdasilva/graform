@@ -13,7 +13,9 @@ class Form < ActiveRecord::Base
   end
   
   def first_question
-    Question.where(:form_id => id).order('number ASC').limit(1).first
+    first = Question.where(:form_id => id, :is_first => true).first
+    first = Question.where(:form_id => id).order('number ASC').limit(1).first unless first
+    first
   rescue => e
     nil
   end

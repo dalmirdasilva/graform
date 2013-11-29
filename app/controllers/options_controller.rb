@@ -37,7 +37,7 @@ class OptionsController < ApplicationController
     respond_to do |format|
       if @option.save
         format.html { redirect_to form_question_option_url(@form, @question, @option), notice: t('activerecord.successful.messages.created.updated') }
-        format.json { render action: 'show', status: :created, location: @option }
+        format.json { render json: {status: :created, id: @option.id} }
       else
         flash.now[:error] = @option.errors.full_messages
         format.html { render action: 'new' }

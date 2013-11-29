@@ -40,7 +40,7 @@ class window.RestClientClass
   confireAjax: () ->
     $.ajaxSetup
       contentType: 'application/json'
-      async: true
+      async: false
       timeout: @options.ajaxTimeout
       error: (xhr, ajaxOptions, thrownError) =>
         console.log "Error: #{xhr} | #{ajaxOptions} | #{thrownError}"

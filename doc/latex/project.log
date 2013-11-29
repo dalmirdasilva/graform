@@ -1,0 +1,221 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdftex 2013.11.28)  28 NOV 2013 20:55
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**project.tex
+(./project.tex
+! Undefined control sequence.
+l.1 \documentclass
+                  [11pt]{article}
+? 
+! Undefined control sequence.
+l.2 \usepackage
+               [utf8]{inputenc}
+? 
+! Undefined control sequence.
+l.3 \usepackage
+               [brazil]{babel}
+? 
+! Undefined control sequence.
+l.4 \usepackage
+               {graphicx}
+? 
+! Undefined control sequence.
+l.5 \usepackage
+               {tabularx}
+? 
+! Undefined control sequence.
+l.6 \DeclareGraphicsExtensions
+                              {.pdf,.png,.jpg}
+? 
+! Undefined control sequence.
+l.7 \setlength
+              {\topmargin}{-.5in}
+? 
+! Undefined control sequence.
+l.7 \setlength{\topmargin
+                         }{-.5in}
+? 
+! Undefined control sequence.
+l.8 \setlength
+              {\textheight}{9in}
+? 
+! Undefined control sequence.
+l.8 \setlength{\textheight
+                          }{9in}
+? 
+! Undefined control sequence.
+l.9 \setlength
+              {\oddsidemargin}{.125in}
+? 
+! Undefined control sequence.
+l.9 \setlength{\oddsidemargin
+                             }{.125in}
+? 
+! Undefined control sequence.
+l.10 \setlength
+               {\textwidth}{6.25in}
+? 
+! Undefined control sequence.
+l.10 \setlength{\textwidth
+                          }{6.25in}
+? 
+! Undefined control sequence.
+l.11 \usepackage
+                {xcolor,colortbl}
+? 
+! Undefined control sequence.
+l.12 \definecolor
+                 {gray}{rgb}{0.85,0.85,0.85}
+? 
+! Undefined control sequence.
+l.13 \definecolor
+                 {lightblue}{rgb}{0.75,0.75,0.75}
+? 
+
+Overfull \hbox (19.30171pt too wide) in paragraph at lines 1--14
+[]\tenrm [11pt]article [utf8]inputenc [brazil]babel graph-icx tab-u-larx .pdf,.
+png,.jpg -.5in 9in .125in 6.25in xcolor,colortbl|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm [
+.\tenrm 1
+.\tenrm 1
+.\tenrm p
+.etc.
+
+! Undefined control sequence.
+l.15 \begin
+           {document}
+? 
+! Undefined control sequence.
+l.17   \begin
+             {titlepage}
+? 
+! Undefined control sequence.
+l.20     \includegraphics
+                         [width=.5\textwidth]{logo.jpg}
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   [
+l.20     \includegraphics[
+                          width=.5\textwidth]{logo.jpg}
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   [
+l.20     \includegraphics[
+                          width=.5\textwidth]{logo.jpg}
+? 
+! Undefined control sequence.
+l.20     \includegraphics[width=.5\textwidth
+                                            ]{logo.jpg}
+? 
+! Undefined control sequence.
+l.22     \vspace
+                {\stretch{1}}
+? 
+! Undefined control sequence.
+l.22     \vspace{\stretch
+                         {1}}
+? 
+! Undefined control sequence.
+l.23     \large
+               {CURSO SUPERIOR DE TECNOLOGIA EM AN√ÅLISE E DESENVOLVIMENTO D...
+
+? 
+Missing character: There is no √ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no É in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no É in font cmr10!
+! Undefined control sequence.
+l.25     \vspace
+                {\stretch{1}}
+? 
+! Undefined control sequence.
+l.25     \vspace{\stretch
+                         {1}}
+? 
+! Undefined control sequence.
+l.27     \large
+               {BRAUNER SOUZA DE MELLO\\DALMIR DA SILVA}
+? 
+! Argument of \\ has an extra }.
+<inserted text> 
+                \par 
+<to be read again> 
+                   }
+l.27 ...e{BRAUNER SOUZA DE MELLO\\DALMIR DA SILVA}
+                                                  
+? 
+Runaway argument?
+DALMIR DA SILVA
+! Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+<to be read again> 
+                   }
+l.27 ...e{BRAUNER SOUZA DE MELLO\\DALMIR DA SILVA}
+                                                  
+? 
+! Undefined control sequence.
+l.29     \vspace
+                {\stretch{1}}
+? 
+! Undefined control sequence.
+l.29     \vspace{\stretch
+                         {1}}
+? 
+! Undefined control sequence.
+l.30     \large
+               {\textbf{Graform}}
+? 
+! Undefined control sequence.
+l.30     \large{\textbf
+                       {Graform}}
+? 
+! Undefined control sequence.
+l.32     \vspace
+                {\stretch{2}}
+? 
+! Undefined control sequence.
+l.32     \vspace{\stretch
+                         {2}}
+? 
+! Undefined control sequence.
+l.33     \large
+               {PORTO ALEGRE, \\DEZ de 2013}
+? 
+! Argument of \\ has an extra }.
+<inserted text> 
+                \par 
+<to be read again> 
+                   }
+l.33     \large{PORTO ALEGRE, \\DEZ de 2013}
+                                            
+? 
+Runaway argument?
+DEZ de 2013
+! Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+<to be read again> 
+                   }
+l.33     \large{PORTO ALEGRE, \\DEZ de 2013}
+                                            
+? 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] )</usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on project.pdf (1 page, 21125 bytes).
+PDF statistics:
+ 12 PDF objects out of 1000 (max. 8388607)
+ 7 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

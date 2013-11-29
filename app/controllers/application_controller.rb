@@ -17,8 +17,9 @@ class ApplicationController < ActionController::Base
       @current_user ||= User.find(session[:user_id]) if session[:user_id] rescue nil
     end
     
-    def apply_layout
-      ApplicationController::layout (params.has_key? :layout) ? params[:layout] : 'application'
+    def apply_layout(layout = nil)
+      new_layout = layout ? layout : ((params.has_key? :layout) ? params[:layout] : 'application')
+      ApplicationController::layout new_layout
     end
     
     def set_javascript_var name, value

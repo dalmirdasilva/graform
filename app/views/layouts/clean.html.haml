@@ -1,0 +1,8 @@
+= render 'layouts/header'
+%body.noheader
+  #main{:role => "main"}
+    .container
+      .content
+        .row
+          .span12
+            = yield

@@ -7,7 +7,14 @@ class Question < ActiveRecord::Base
   has_many :rules
   validates :text, presence: true
   
-  def next_question
-    form.questions.where("number > ?", number).order('number ASC').limit(1).first
+  def next_question(reply_id)
+    higher_questions = form.questions.where("number > ?", number).order('number ASC')
+    higher_questions.each do |question|
+      reply_answers = question.answers.select { |answer| answer.reply_id = reply_id }
+      unless reply_answers.empty?
+        return question
+      end
+    end
+    nil
   end
 end

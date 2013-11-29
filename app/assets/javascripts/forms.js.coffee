@@ -13,6 +13,8 @@ class window.FormsClass
   
   attachEventListeners: () ->
   
+    $("#form-content").sortable()
+  
     @ui.addQuestionButton.click (e) =>
       formId = window.form["id"]
       questionTypeId = parseInt $(e.target).attr 'question_type_id'

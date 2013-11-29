@@ -8,6 +8,10 @@ class FormsController < ApplicationController
   end
 
   def editor
+    puts '--------------------------------------'
+    puts 'acola'
+    puts '--------------------------------------'
+    apply_layout "application"
     @question_types = QuestionType.all
     @form = Form.find params[:form_id]
     set_javascript_var :form, @form

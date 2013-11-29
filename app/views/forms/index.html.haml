@@ -5,7 +5,7 @@
   .row-fluid
     .span12
       %h4
-        = form.name
+        = link_to form.name, form_editor_path(form)
       %p
         - replies = form.replies ? form.replies.size : 0
         - questions = form.questions ? form.questions.size : 0

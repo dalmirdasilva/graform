@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131020231010) do
+ActiveRecord::Schema.define(version: 20131129011921) do
 
   create_table "answers", force: true do |t|
     t.integer  "reply_id"
@@ -58,6 +58,8 @@ ActiveRecord::Schema.define(version: 20131020231010) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "number"
+    t.boolean  "is_first"
+    t.boolean  "is_last"
   end
 
   create_table "replies", force: true do |t|
