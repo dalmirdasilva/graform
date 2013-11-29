@@ -39,12 +39,16 @@ class QuestionsController < ApplicationController
       reply_id = params[:reply_id]
       @next_question = catch :next do
         answer = @question.answers.where(reply_id: reply_id).first
+        puts answer.inspect
         throw :next, @question.next_question(reply_id) unless answer
         option = answer.option
+        puts option.inspect
         throw :next, @question.next_question(reply_id) unless option
         rule = @question.rules.where(option_id: option.id).first
+        puts rule.inspect
         throw :next, @question.next_question(reply_id) unless rule
         next_question = rule.next_question
+        puts next_question.inspect
         throw :next, @question.next_question(reply_id) unless next_question
         next_question
       end

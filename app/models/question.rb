@@ -10,8 +10,8 @@ class Question < ActiveRecord::Base
   def next_question(reply_id)
     higher_questions = form.questions.where("number > ?", number).order('number ASC')
     higher_questions.each do |question|
-      reply_answers = question.answers.select { |answer| answer.reply_id = reply_id }
-      unless reply_answers.empty?
+      reply_answers = question.answers.select { |answer| answer.reply_id == reply_id }
+      if reply_answers.empty?
         return question
       end
     end

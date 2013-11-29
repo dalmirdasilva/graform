@@ -23,7 +23,7 @@ class window.RepliesClass
         option_id: ctx.optionId
       
       $(".flash_error").remove()
-      unless ctx.optionId > 0
+      if ctx.optionId == 0 or ((ctx.optionId instanceof Array) && ctx.optionId.length == 0)
         $(".reply-question-box").prepend("<div class='flash_error'>Você precisa responder a questão atual.</div>")
         return
       

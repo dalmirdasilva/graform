@@ -1,0 +1,11 @@
+%h3 
+  = 'Resposta #'
+  = @anwser_count
+%table.reply_table_report{border: 1}
+  %tbody
+  - @reply.answers.each do |answer|
+    - @answer = answer
+    %tr 
+      %td.reply_question_report= @answer.question.text
+      %td= @answer.option.text
+

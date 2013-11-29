@@ -1,7 +1,9 @@
 %h2 Relatório
 %h5 
   = @form.name
-%section#form-content
+%section
+  - @anwser_count = 0
   - @form.replies.each do |reply|
+    - @anwser_count += 1
     - @reply = reply
-    = 'opa'
+    = render partial: "replies/report_show"

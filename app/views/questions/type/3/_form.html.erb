@@ -5,8 +5,8 @@
     <button class="btn btn-default btn-snall save-question" question_id="<%= @question.id %>">Salvar</button>&nbsp;
     <button class="btn btn-default btn-snall remove-question" question_id="<%= @question.id %>">Remover</button>&nbsp;
     <button class="btn btn-default btn-snall preview-question" question_id="<%= @question.id %>">Visualizar</button>&nbsp;
-    <div class="first-question"><label for="is-first-<%= @question.id %>">início</label>: <input class="question-is-first" <%= @question.is_first ? "checked='checked'" : "" %> type="radio" id="is-first-<%= @question.id %>" name="is-first" /></div>
-    <div class="last-question"><label for="is-last-<%= @question.id %>">final</label>: <input class="question-is-last" <%= @question.is_last ? "checked='checked'" : "" %> type="radio" id="is-last-<%= @question.id %>" name="is-last" /></div>
+    <div class="first-question"><label for="is-first-<%= @question.id %>">inicial</label>: <input class="question-is-first" <%= @question.is_first ? "checked='checked'" : "" %> type="radio" id="is-first-<%= @question.id %>" name="is-first" /></div>
+    <div class="last-question"><label for="is-last-<%= @question.id %>">final</label>: <input class="question-is-last" <%= @question.is_last ? "checked='checked'" : "" %> type="checkbox" id="is-last-<%= @question.id %>" name="is-last" /></div>
   </h1>
   <div>
     <textarea class="question-text"><%= @question.text %></textarea>
