@@ -2,19 +2,13 @@
  *= require_tree .
  */
 #logo {
-  position: absolute;
-  top: 10px;
-  left: 150px;
-  font-size: 24px;
+  margin-top: 8px;
+  margin-left: 16px;
+  font-size: 28px;
   z-index: 99999;
-}
-
-#logo-desc {
-  position: absolute;
-  top: 12px;
-  left: 250px;
-  font-size: 14px;
-  z-index: 99999;
+  span {
+    font-size: 14px;
+  }
 }
 
 #loader {
