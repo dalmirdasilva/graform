@@ -18,6 +18,7 @@
       %p
         .btn-group.pull-right
           = link_to t('editor'), form_editor_path(form), { class: 'btn btn-mini' }
+          = link_to t('report'), form_report_path(form), { class: 'btn btn-mini' }
           = link_to t('show'), form, { class: 'btn btn-mini' }
           = link_to t('edit'), edit_form_path(form), { class: 'btn btn-mini' }
           = link_to t('destroy'), form, { method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini' }

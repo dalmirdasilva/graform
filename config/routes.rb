@@ -20,6 +20,7 @@ Graform::Application.routes.draw do
   resources :forms do
     
     get :editor
+    get :report
   
     resources :replies do
       resources :answers

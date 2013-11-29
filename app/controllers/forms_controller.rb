@@ -1,6 +1,6 @@
 class FormsController < ApplicationController
 
-  before_action :set_form, only: [:show, :edit, :update, :destroy, :editor]
+  before_action :set_form, only: [:show, :edit, :update, :destroy, :editor, :report]
   before_action :login_required!, only: [:index, :show, :edit, :update, :destroy]
   
   def index
@@ -8,9 +8,6 @@ class FormsController < ApplicationController
   end
 
   def editor
-    puts '--------------------------------------'
-    puts 'acola'
-    puts '--------------------------------------'
     apply_layout "application"
     @question_types = QuestionType.all
     @form = Form.find params[:form_id]

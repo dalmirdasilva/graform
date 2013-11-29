@@ -1,0 +1,7 @@
+%h2 Relatório
+%h5 
+  = @form.name
+%section#form-content
+  - @form.replies.each do |reply|
+    - @reply = reply
+    = 'opa'

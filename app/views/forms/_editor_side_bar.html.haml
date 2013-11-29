@@ -7,9 +7,9 @@
           Adicionar
         = t("title.question_types.names.#{question_type.name}")
 
-  %h4 Preferências
+  %h4 
   %ul
     %li
       Link para respoder esse formulário:
-      = link_to 'Criar nova resposta', @form.public_link
+      = link_to "#{HOST_AND_PORT}#{@form.public_link}", @form.public_link
       

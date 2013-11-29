@@ -15,11 +15,18 @@ class window.RepliesClass
   
     @ui.replyNextQuestionButton.click (event) =>
       ctx = {}
+        
       @setEventContext event, ctx
       params =
         question_id: ctx.questionId,
         reply_id: ctx.replyId
         option_id: ctx.optionId
+      
+      $(".flash_error").remove()
+      unless ctx.optionId > 0
+        $(".reply-question-box").prepend("<div class='flash_error'>Você precisa responder a questão atual.</div>")
+        return
+      
       if ctx.optionId instanceof Array
         $.each ctx.optionId, (_, id) ->
           params.option_id = id
@@ -28,7 +35,7 @@ class window.RepliesClass
       else
         RestClient.post "/forms/#{ctx.formId}/replies/#{ctx.replyId}/answers.json", params, (response) =>
           console.log response
-          
+      
       RestClient.get "/forms/#{ctx.formId}/questions/#{ctx.questionId}/next_question", params, (response) =>
         if response is ''
           @ui.replyQuestionBox.html "Muito obrigado."
