@@ -6,6 +6,6 @@
   - @reply.answers.each do |answer|
     - @answer = answer
     %tr 
-      %td.reply_question_report= @answer.question.text
-      %td= @answer.option.text
+      %td.reply_question_report= @answer.question ? @answer.question.text : ""
+      %td= @answer.option ? @answer.option.text : ""
 
