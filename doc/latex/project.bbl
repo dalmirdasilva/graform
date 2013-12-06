@@ -1,0 +1,75 @@
+\begin{thebibliography}{10}
+
+\bibitem{website:evalgo}
+Rdp~Benjamin Franklin.
+\newblock Create, publish, and analyze your surveys \& questionnaires in a few
+  minutes! (http://www.evalandgo.com/), 2013.
+
+\bibitem{website:rails}
+David~Heinemeier Hansson.
+\newblock Rails - web development that doesn't hurt (http://rubyonrails.org/),
+  2013.
+
+\bibitem{website:googleforms}
+Google Inc.
+\newblock Formulários - faça enquetes ou escale equipes rapidamente com um
+  simples formulário on-line (http://www.google.com/), 2013.
+
+\bibitem{website:jquery}
+The jQuery Foundation.
+\newblock jquery - write less, do more (http://jquery.com/), 2005.
+
+\bibitem{website:ubuntu}
+Canonical Ltd.
+\newblock Ubuntu is the openstack favourite (http://www.ubuntu.com/), 2013.
+
+\bibitem{website:ruby}
+Matz.
+\newblock A programmer's best friend (http://www.ruby-lang.org/), 2001.
+
+\bibitem{website:nginx}
+Nginx.
+\newblock Make your web site fast and reliable
+  (http://pt.wikipedia.org/wiki/nginx), 2013.
+
+\bibitem{website:mysql}
+Oracle.
+\newblock The world's most popular open source database
+  (http://www.mysql.com/), 2013.
+
+\bibitem{thomas}
+R.~THOMAS SAM.
+\newblock {\em Agile Web Development with Rails}.
+\newblock Pragmatic Bookshelf, 2008.
+
+\bibitem{website:latex}
+Toni Santo-Regis.
+\newblock Latex - a document preparation system
+  (http://www.latex-project.org/), 2013.
+
+\bibitem{website:surveymonkey}
+Surveymonkey.
+\newblock Crie seus próprios questionários online
+  (http://pt.surveymonkey.com), 2013.
+
+\bibitem{graphTenenbaum}
+A.~TENENBAUM.
+\newblock {\em Estruturas de Dados em C}.
+\newblock Makron Books, 1997.
+
+\bibitem{urubatan}
+R.~URUBATAN.
+\newblock {\em Ruby on Rails: Desenvolvimento Fácil e Rápido de Aplicações
+  Web.}
+\newblock São Paulo, 2009.
+
+\bibitem{graphMarcos}
+M.~VIANNA.
+\newblock {\em Estrutura de Dados: Conceitos e Técnicas de Implementações}.
+\newblock 2000.
+
+\bibitem{website:git}
+Wikipedia.
+\newblock Git (http://en.wikipedia.org/wiki/git\_(software)), 2013.
+
+\end{thebibliography}

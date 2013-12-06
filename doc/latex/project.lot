@@ -1,0 +1,23 @@
+\select@language {brazil}
+\contentsline {table}{\numberline {1}{\ignorespaces Comparativo de funcionalidades}}{10}
+\contentsline {table}{\numberline {2}{\ignorespaces RF. 001 - Cadastrar usu\IeC {\'a}rio.}}{11}
+\contentsline {table}{\numberline {3}{\ignorespaces RF. 002 - Autenticar usu\IeC {\'a}rio no sistema.}}{11}
+\contentsline {table}{\numberline {4}{\ignorespaces RF. 003 - Cadastrar formul\IeC {\'a}rio.}}{11}
+\contentsline {table}{\numberline {5}{\ignorespaces RF. 004 - Editar formul\IeC {\'a}rio.}}{12}
+\contentsline {table}{\numberline {6}{\ignorespaces RF. 005 - Cadastrar quest\IeC {\~a}o.}}{12}
+\contentsline {table}{\numberline {7}{\ignorespaces RF. 006 - Cadastrar op\IeC {\c c}\IeC {\~a}o.}}{13}
+\contentsline {table}{\numberline {8}{\ignorespaces RF. 007 - Responder um formul\IeC {\'a}rio.}}{13}
+\contentsline {table}{\numberline {9}{\ignorespaces RF. 008 - Visualizar as respostas de um formul\IeC {\'a}rio.}}{14}
+\contentsline {table}{\numberline {10}{\ignorespaces RNF. 001 - Utilizar a n\IeC {\'u}vem da Amazon.}}{14}
+\contentsline {table}{\numberline {11}{\ignorespaces RNF. 002 - Utilizar m\IeC {\'a}quina como servidor de apli\IeC {\c c}\IeC {\~a}o.}}{14}
+\contentsline {table}{\numberline {12}{\ignorespaces RNF. 003 - Utilizar m\IeC {\'a}quina como servidor de banco de dados.}}{15}
+\contentsline {table}{\numberline {13}{\ignorespaces RNF. 004 - Utilizar servidor de banco de dados MySQL.}}{15}
+\contentsline {table}{\numberline {14}{\ignorespaces RNF. 005 - Utilizar o nginx como servidor web.}}{15}
+\contentsline {table}{\numberline {15}{\ignorespaces RNF. 006 - Utilizar a linguagem Ruby.}}{16}
+\contentsline {table}{\numberline {16}{\ignorespaces RNF. 007 - Utilizar o framework Ruby on Rails.}}{16}
+\contentsline {table}{\numberline {17}{\ignorespaces UC01 - Cadastrar usu\IeC {\'a}rio.}}{17}
+\contentsline {table}{\numberline {18}{\ignorespaces UC02 - Autenticar usu\IeC {\'a}rio no sistema.}}{18}
+\contentsline {table}{\numberline {19}{\ignorespaces UC03 - Cadastrar formul\IeC {\'a}rio.}}{19}
+\contentsline {table}{\numberline {20}{\ignorespaces UC04 - Editar formul\IeC {\'a}rio.}}{20}
+\contentsline {table}{\numberline {21}{\ignorespaces UC05 - Responder um formul\IeC {\'a}rio.}}{21}
+\contentsline {table}{\numberline {22}{\ignorespaces UC06 - Visualizar relat\IeC {\'o}rio.}}{22}
