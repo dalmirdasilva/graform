@@ -3,7 +3,6 @@
 \usepackage[brazil]{babel}
 \usepackage{graphicx}
 \usepackage{tabularx}
-\usepackage{mathtools}
 \usepackage{cite}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \setlength{\topmargin}{-.5in}
@@ -260,7 +259,7 @@
 
           \paragraph{}
           
-          Levando em consideração essas características e a ideia de 
+          Levando em consideração as características do sistema e a ideia de 
           criar a aplicação utilizando a arquitetura MVC (Model-View-Controler), 
           decidiu-se implementar o sistema Graform usando o {\em framework }
           livre Ruby on Rails, projeto  de código 
@@ -1027,7 +1026,7 @@
     
     \begin{figure}[h!]
       \centering
-      \includegraphics[width=1.0\textwidth]{model_test.png}
+      \includegraphics[width=.5\textwidth]{model_test.png}
       \caption{Exemplo de teste de modelos ({\em Models}).}
     \end{figure}
     
@@ -1036,7 +1035,25 @@
   \section{Conclusão}
 
     \paragraph{}    
-    Aqui
+    Encontramos, ao longo do desenvolvimento desse projeto, inúmeras 
+    circunstâncias onde as técnicas de desenvolvimento de software, 
+    estudadas durante o curso, foram fundamentais para prover a melhor 
+    solução para cada problema encontrado.
+    
+    \paragraph{}    
+    Técnicas, como TDD, propiciaram um desenvolvimento ágil e com boa taxa 
+    de cobertura de código, embora tenha sido difícil segui-la {\em by the book.}
+    Assim como o uso do padrão MVC ajudou no objetivo de atingir baixo acoplamento
+    e alta coesão das classes do sistema.
+    
+    \paragraph{}
+    A utilização de uma aplicação web, possível de ser acessada por
+    qualquer computador, sem a necessidade de instalação de um software 
+    {\em desktop}, aumentou a produtividade da empresa como um todo. Também,
+    houve uma redução de incidências de erros humanos, devido ao fato de não ser mais necessáro o
+    uso de instrução SQL diretamente na base de dados para a criação e gerenciamento dos formulários.
+
+
       
   \newpage
   \bibliography{project}{}

@@ -1,15 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.28)  5 DEC 2013 01:56
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.11.26)  6 DEC 2013 18:59
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **project.tex
 (./project.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
-aded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -24,19 +23,19 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -186,7 +185,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -217,7 +216,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -241,14 +240,14 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/portuges.ldf
+(/usr/share/texmf-texlive/tex/generic/babel/portuges.ldf
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
@@ -260,42 +259,35 @@ Package babel Warning: No hyphenation patterns were loaded for
 \l@portuges = a dialect from \language0
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
-)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+)) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count88
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texmf-texlive/tex/latex/tools/tabularx.sty
 Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen106
 \extrarowheight=\dimen107
@@ -311,102 +303,15 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \TX@cols=\count89
 \TX@ftn=\toks18
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
-Package: mathtools 2012/04/24 v1.12 mathematical typesetting tools
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count90
-\calc@Bcount=\count91
-\calc@Adimen=\dimen113
-\calc@Bdimen=\dimen114
-\calc@Askip=\skip45
-\calc@Bskip=\skip46
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count92
-\calc@Cskip=\skip47
-)
-(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
-Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip48
-
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks19
-\ex@=\dimen115
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen116
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
-)
-\inf@bad=\count93
-LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count94
-\leftroot@=\count95
-LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count96
-\DOTSCASE@=\count97
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen117
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count98
-\c@MaxMatrixCols=\count99
-\dotsspace@=\muskip10
-\c@parentequation=\count100
-\dspbrk@lvl=\count101
-\tag@help=\toks20
-\row@=\count102
-\column@=\count103
-\maxfields@=\count104
-\andhelp@=\toks21
-\eqnshift@=\dimen118
-\alignsep@=\dimen119
-\tagshift@=\dimen120
-\tagwidth@=\dimen121
-\totwidth@=\dimen122
-\lineht@=\dimen123
-\@envbody=\toks22
-\multlinegap=\skip49
-\multlinetaggap=\skip50
-\mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
-)
-\g_MT_multlinerow_int=\count105
-\l_MT_multwidth_dim=\dimen124
-\origjot=\skip51
-\l_MT_shortvdotswithinadjustabove_dim=\dimen125
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen126
-\l_MT_above_intertext_dim=\dimen127
-\l_MT_below_intertext_dim=\dimen128
-\l_MT_above_shortintertext_dim=\dimen129
-\l_MT_below_shortintertext_dim=\dimen130
-)
-(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 373.
-Package: cite 2010/09/10  v 5.3
+(/usr/share/texmf-texlive/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 285.
+LaTeX Info: Redefining \nocite on input line 356.
+Package: cite 2009/08/29  v 5.2
 )
 (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+(/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -420,99 +325,56 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks24
-\minrowclearance=\skip52
+(/usr/share/texmf-texlive/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
+\everycr=\toks19
+\minrowclearance=\skip45
 ) (./project.aux)
 \openout1 = `project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen131
-\scratchbox=\box28
-\nofMPsegments=\count107
-\nofMParguments=\count108
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen132
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
-\everyMPtoPDFconversion=\toks26
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-<logo.jpg, id=1, 745.78625pt x 134.5025pt>
+\scratchcounter=\count90
+\scratchdimen=\dimen113
+\scratchbox=\box26
+\nofMPsegments=\count91
+\nofMParguments=\count92
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count93
+\MPscratchDim=\dimen114
+\MPnumerator=\count94
+\everyMPtoPDFconversion=\toks21
+) <logo.jpg, id=1, 745.78625pt x 134.5025pt>
 File: logo.jpg Graphic file (type jpg)
- <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 22.
-(pdftex.def)             Requested size: 225.84375pt x 40.73073pt.
- [1
+ <use logo.jpg> [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.jpg>] [1] (./projec
-t.toc [2])
+t.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+ [2])
 \tf@toc=\write3
 \openout3 = `project.toc'.
 
- [3]
-(./project.lof)
+
+[3] (./project.lof)
 \tf@lof=\write4
 \openout4 = `project.lof'.
 
@@ -520,22 +382,24 @@ t.toc [2])
 \tf@lot=\write5
 \openout5 = `project.lot'.
 
- [4] [5] [6] [7]
-<graph.png, id=36, 461.47406pt x 212.29312pt>
+ [4] [5] [6]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 161.
+ [7]
+<graph.png, id=35, 461.47406pt x 212.29312pt>
 File: graph.png Graphic file (type png)
- <use graph.png>
-Package pdftex.def Info: graph.png used on input line 210.
-(pdftex.def)             Requested size: 406.51599pt x 187.00964pt.
- [8 <./graph.png>] [9]
-Underfull \hbox (badness 1648) in paragraph at lines 355--355
+ <use graph.png> [8 <./graph.png>] [9]
+Underfull \hbox (badness 1648) in paragraph at lines 354--354
 []|\OT1/cmr/m/n/10.95 Cadastro de op^^Xc~oes de re-
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 357--357
+Underfull \hbox (badness 1776) in paragraph at lines 356--356
 []|\OT1/cmr/m/n/10.95 Alterar quest~oes de acordo
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 356.
 [10
 
 ] [11] [12
@@ -549,100 +413,67 @@ Underfull \hbox (badness 1776) in paragraph at lines 357--357
 ] [16
 
 ]
-<create_user.png, id=72, 997.7275pt x 451.6875pt>
+<create_user.png, id=71, 997.7275pt x 451.6875pt>
 File: create_user.png Graphic file (type png)
  <use create_user.png>
-Package pdftex.def Info: create_user.png used on input line 750.
-(pdftex.def)             Requested size: 406.51599pt x 184.03517pt.
-
 [17
 
  <./create_user.png (PNG copy)>]
-<authenticate_user.png, id=76, 989.6975pt x 330.23375pt>
+<authenticate_user.png, id=75, 989.6975pt x 330.23375pt>
 File: authenticate_user.png Graphic file (type png)
 
-<use authenticate_user.png>
-Package pdftex.def Info: authenticate_user.png used on input line 786.
-(pdftex.def)             Requested size: 406.51599pt x 135.64362pt.
- [18
+<use authenticate_user.png> [18
 
  <./authenticate_user.png (PNG copy)>]
-<new_form.png, id=81, 1177.39874pt x 523.9575pt>
+<new_form.png, id=80, 1177.39874pt x 523.9575pt>
 File: new_form.png Graphic file (type png)
- <use new_form.png>
-Package pdftex.def Info: new_form.png used on input line 822.
-(pdftex.def)             Requested size: 406.51599pt x 180.90144pt.
- [19
+ <use new_form.png> [19
 
- <./new_form.png (PNG copy)>] <editor.png, id=85, 1087.06125pt x 607.26875pt>
+ <./new_form.png (PNG copy)>] <editor.png, id=84, 1087.06125pt x 607.26875pt>
 File: editor.png Graphic file (type png)
 
-<use editor.png>
-Package pdftex.def Info: editor.png used on input line 864.
-(pdftex.def)             Requested size: 406.51599pt x 227.09512pt.
- [20
+<use editor.png> [20
 
  <./editor.png (PNG copy)>]
-<reply_a_form.png, id=89, 981.6675pt x 434.62375pt>
+<reply_a_form.png, id=88, 981.6675pt x 434.62375pt>
 File: reply_a_form.png Graphic file (type png)
  <use reply_a_form.png>
-Package pdftex.def Info: reply_a_form.png used on input line 911.
-(pdftex.def)             Requested size: 406.51599pt x 179.98083pt.
-
 [21
 
  <./reply_a_form.png (PNG copy)>]
-<view_report.png, id=93, 1099.10625pt x 424.58624pt>
+<view_report.png, id=92, 1099.10625pt x 424.58624pt>
 File: view_report.png Graphic file (type png)
  <use view_report.png>
-Package pdftex.def Info: view_report.png used on input line 945.
-(pdftex.def)             Requested size: 406.51599pt x 157.03613pt.
-
 [22
 
  <./view_report.png (PNG copy)>]
-<class_diagram.png, id=97, 835.62187pt x 529.98pt>
+<class_diagram.png, id=96, 835.62187pt x 529.98pt>
 File: class_diagram.png Graphic file (type png)
  <use class_diagram.png>
-Package pdftex.def Info: class_diagram.png used on input line 959.
-(pdftex.def)             Requested size: 451.6875pt x 286.48413pt.
-
 [23
 
  <./class_diagram.png>]
-<sequence_diagram_main.png, id=102, 982.42032pt x 831.105pt>
+<sequence_diagram_main.png, id=101, 982.42032pt x 831.105pt>
 File: sequence_diagram_main.png Graphic file (type png)
 
-<use sequence_diagram_main.png>
-Package pdftex.def Info: sequence_diagram_main.png used on input line 971.
-(pdftex.def)             Requested size: 451.6875pt x 382.11003pt.
- [24
+<use sequence_diagram_main.png> [24
 
  <./sequence_diagram_main.png>]
-<sequence_diagram_editor.png, id=108, 1114.1625pt x 615.0478pt>
+<sequence_diagram_editor.png, id=107, 1114.1625pt x 615.0478pt>
 File: sequence_diagram_editor.png Graphic file (type png)
 
-<use sequence_diagram_editor.png>
-Package pdftex.def Info: sequence_diagram_editor.png used on input line 981.
-(pdftex.def)             Requested size: 451.6875pt x 249.337pt.
- [25
+<use sequence_diagram_editor.png> [25
 
  <./sequence_diagram_editor.png>]
-<uc_diagram.png, id=113, 682.80093pt x 413.29407pt>
+<uc_diagram.png, id=112, 682.80093pt x 413.29407pt>
 File: uc_diagram.png Graphic file (type png)
  <use uc_diagram.png>
-Package pdftex.def Info: uc_diagram.png used on input line 994.
-(pdftex.def)             Requested size: 451.6875pt x 273.40555pt.
-
 [26
 
- <./uc_diagram.png>] <model_test.png, id=118, 460.72125pt x 269.005pt>
+ <./uc_diagram.png>] <model_test.png, id=117, 460.72125pt x 269.005pt>
 File: model_test.png Graphic file (type png)
 
-<use model_test.png>
-Package pdftex.def Info: model_test.png used on input line 1030.
-(pdftex.def)             Requested size: 451.6875pt x 263.72981pt.
- [27
+<use model_test.png> [27
 
  <./model_test.png>] [28
 
@@ -660,29 +491,27 @@ Underfull \hbox (badness 2591) in paragraph at lines 46--49
 
 ) [29] (./project.aux) ) 
 Here is how much of TeX's memory you used:
- 3956 strings out of 495059
- 52494 string characters out of 3182029
- 125410 words of memory out of 3000000
- 7045 multiletter control sequences out of 15000+200000
- 11307 words of font info for 40 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 38i,17n,35p,288b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxt
-i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti10.pfb>
-Output written on project.pdf (30 pages, 831993 bytes).
+ 2256 strings out of 495061
+ 26811 string characters out of 1182620
+ 90210 words of memory out of 3000000
+ 5406 multiletter control sequences out of 15000+50000
+ 10181 words of font info for 35 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 34i,17n,35p,288b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on project.pdf (30 pages, 849274 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
+ 166 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
