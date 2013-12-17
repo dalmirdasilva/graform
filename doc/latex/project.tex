@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{cite}
+\usepackage{listings}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \setlength{\topmargin}{-.5in}
 \setlength{\textheight}{9in}
@@ -353,7 +354,7 @@
             \hline
             Cadastro de opções de respostas\cellcolor{gray}                     & X             & X           & X       & \em X \\
             \hline
-            Alterar questões de acordo com o tipo de respostas\cellcolor{gray} & X\footnote[1]             & X\footnote[1]           &         & \em X \\
+            Alterar questões de acordo com o tipo de respostas\cellcolor{gray} & X             & X           &         & \em X \\
             \hline
             Preço acessível\cellcolor{gray}                                     &               &             & X       & \em X \\
             \hline
@@ -364,13 +365,14 @@
         \end{center}
       \end{table}
       
-    \footnotetext[1]{Apenas parcialmente, somente é possível definir a próxima página do formulário baseado na resposta.}
-  
   \newpage
 
   \section{Especificação dos requisitos}
-
+    
     \subsection{Requisitos Funcionais}
+
+    \paragraph{}
+    As especificações a seguir mostra, detalhadamente, cada requisito funcional.
     
       \subsubsection{Cadastrar usuário.}
       
@@ -424,6 +426,8 @@
           \end{center}
         \end{table}
 
+    \clearpage
+
       \subsubsection{Cadastrar formulário.}
 
         \begin{table}[h]
@@ -448,8 +452,6 @@
             \caption{RF. 003 - Cadastrar formulário.}
           \end{center}
         \end{table}
-
-    \clearpage
     
       \subsubsection{Editar formulário.}
 
@@ -501,8 +503,6 @@
           \end{center}
         \end{table}
 
-    \clearpage
-
       \subsubsection{Cadastrar opção.}
 
         \begin{table}[h]
@@ -525,6 +525,8 @@
             \caption{RF. 006 - Cadastrar opção.}
           \end{center}
         \end{table}
+
+    \clearpage
 
       \subsubsection{Responder um formulário.}
 
@@ -582,7 +584,10 @@
 
     \subsection{Requisitos não Funcionais}
     
-      \subsubsection{Utilizar a núvem da Amazon.}
+      \paragraph{}
+      As especificações a seguir mostram os requisito não funcional do sistema.
+
+      \subsubsection{Utilizar a nuvem da Amazon.}
 
         \begin{table}[h]
           \begin{center}
@@ -590,12 +595,12 @@
               \hline
               Código\cellcolor{gray} & RNF. 001\cellcolor{gray} \\
               \hline
-              Título & Utilizar a núvem da Amazon. \\
+              Título & Utilizar a nuvem da Amazon. \\
               \hline
-              Descrição & Toda a aplicação deverá rodar usando a infraestrutura de núvem da Amazon. \\
+              Descrição & Toda a aplicação deverá rodar usando a infraestrutura de nuvem da Amazon. \\
               \hline
             \end{tabular}
-            \caption{RNF. 001 - Utilizar a núvem da Amazon.}
+            \caption{RNF. 001 - Utilizar a nuvem da Amazon.}
           \end{center}
         \end{table}
 
@@ -609,7 +614,7 @@
               \hline
               Título & Utilizar máquina como servidor de aplição. \\
               \hline
-              Descrição & Será utilizado uma instância do tipo micro na núvem da Amazon como servidor de aplicação. \\
+              Descrição & Será utilizado uma instância do tipo micro na nuvem da Amazon como servidor de aplicação. \\
               \hline
             \end{tabular}
             \caption{RNF. 002 - Utilizar máquina como servidor de aplição.}
@@ -628,7 +633,7 @@
               \hline
               Título & Utilizar máquina como servidor de banco de dados. \\
               \hline
-              Descrição & Será utilizado uma instância do tipo micro na núvem da Amazon como servidor de banco de dados. \\
+              Descrição & Será utilizado uma instância do tipo micro na nuvem da Amazon como servidor de banco de dados. \\
               \hline
             \end{tabular}
             \caption{RNF. 003 - Utilizar máquina como servidor de banco de dados.}
@@ -986,6 +991,10 @@
   
     \subsection{Diagramas de caso de uso}
     
+      \paragraph{}
+      A seguir, o caso de uso, descrevendo o cenário das funcionalidades do sistema de questionário eletrônico.
+
+    
       \subsubsection{Diagrama de caso de uso da aplicação.}
 
         \begin{figure}[h!]
@@ -1024,26 +1033,33 @@
     exemplo, a próxima figura mostra um pequeno trecho de código dos 
     testes do modelo (entidade) 'Formulário'.
     
-    \begin{figure}[h!]
-      \centering
-      \includegraphics[width=.5\textwidth]{model_test.png}
-      \caption{Exemplo de teste de modelos ({\em Models}).}
-    \end{figure}
+    {\scriptsize
+      \lstset{language=Ruby}
+      \begin{lstlisting}
+#include<stdio.h>
+#include<iostream>
+int main(void)
+{
+  printf("Hello World\n");
+  return 0;
+}
+      \end{lstlisting}
+    }
+    
     
   \clearpage
       
   \section{Conclusão}
 
-    \paragraph{}    
+    \paragraph{}
     Encontramos, ao longo do desenvolvimento desse projeto, inúmeras 
     circunstâncias onde as técnicas de desenvolvimento de software, 
     estudadas durante o curso, foram fundamentais para prover a melhor 
     solução para cada problema encontrado.
     
-    \paragraph{}    
+    \paragraph{}
     Técnicas, como TDD, propiciaram um desenvolvimento ágil e com boa taxa 
-    de cobertura de código, embora tenha sido difícil segui-la {\em by the book.}
-    Assim como o uso do padrão MVC ajudou no objetivo de atingir baixo acoplamento
+    de cobertura de código. Assim como o uso do padrão MVC ajudou no objetivo de atingir baixo acoplamento
     e alta coesão das classes do sistema.
     
     \paragraph{}
@@ -1053,8 +1069,6 @@
     houve uma redução de incidências de erros humanos, devido ao fato de não ser mais necessáro o
     uso de instrução SQL diretamente na base de dados para a criação e gerenciamento dos formulários.
 
-
-      
   \newpage
   \bibliography{project}{}
   \bibliographystyle{plain}
