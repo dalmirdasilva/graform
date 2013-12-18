@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.28)  18 DEC 2013 02:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.28)  18 DEC 2013 12:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -577,57 +577,57 @@ Package pdftex.def Info: sequence_diagram_editor.png used on input line 994.
  [26
 
  <./sequence_diagram_editor.png>]
-<er.png, id=118, 451.6875pt x 402.50375pt>
+<er.png, id=118, 1797.71625pt x 1430.34375pt>
 File: er.png Graphic file (type png)
  <use er.png>
-Package pdftex.def Info: er.png used on input line 1008.
-(pdftex.def)             Requested size: 451.6875pt x 402.52733pt.
+Package pdftex.def Info: er.png used on input line 1007.
+(pdftex.def)             Requested size: 451.6875pt x 359.37473pt.
  [27
 
- <./er.png>]
-<create_user.png, id=123, 997.7275pt x 451.6875pt>
+ <./er.png (PNG copy)>] <create_user.png, id=122, 997.7275pt x 451.6875pt>
 File: create_user.png Graphic file (type png)
- <use create_user.png>
-Package pdftex.def Info: create_user.png used on input line 1029.
+
+<use create_user.png>
+Package pdftex.def Info: create_user.png used on input line 1028.
 (pdftex.def)             Requested size: 406.51599pt x 184.03517pt.
 
-<authenticate_user.png, id=124, 989.6975pt x 330.23375pt>
+<authenticate_user.png, id=123, 989.6975pt x 330.23375pt>
 File: authenticate_user.png Graphic file (type png)
 
 <use authenticate_user.png>
-Package pdftex.def Info: authenticate_user.png used on input line 1041.
+Package pdftex.def Info: authenticate_user.png used on input line 1040.
 (pdftex.def)             Requested size: 406.51599pt x 135.64362pt.
  [28
 
  <./create_user.png (PNG copy)> <./authenticate_user.png (PNG copy)>] <new_form
-.png, id=128, 1177.39874pt x 523.9575pt>
+.png, id=127, 1177.39874pt x 523.9575pt>
 File: new_form.png Graphic file (type png)
 
 <use new_form.png>
-Package pdftex.def Info: new_form.png used on input line 1058.
+Package pdftex.def Info: new_form.png used on input line 1057.
 (pdftex.def)             Requested size: 406.51599pt x 180.90144pt.
  [29
 
  <./new_form.png (PNG copy)>]
-<editor.png, id=132, 1087.06125pt x 607.26875pt>
+<editor.png, id=131, 1087.06125pt x 607.26875pt>
 File: editor.png Graphic file (type png)
  <use editor.png>
-Package pdftex.def Info: editor.png used on input line 1082.
+Package pdftex.def Info: editor.png used on input line 1081.
 (pdftex.def)             Requested size: 406.51599pt x 227.09512pt.
  [30
 
- <./editor.png (PNG copy)>] <reply_a_form.png, id=137, 981.6675pt x 434.62375pt
+ <./editor.png (PNG copy)>] <reply_a_form.png, id=136, 981.6675pt x 434.62375pt
 >
 File: reply_a_form.png Graphic file (type png)
 
 <use reply_a_form.png>
-Package pdftex.def Info: reply_a_form.png used on input line 1101.
+Package pdftex.def Info: reply_a_form.png used on input line 1100.
 (pdftex.def)             Requested size: 406.51599pt x 179.98083pt.
- <view_report.png, id=138, 1099.10625pt x 424.58624pt>
+ <view_report.png, id=137, 1099.10625pt x 424.58624pt>
 File: view_report.png Graphic file (type png)
 
 <use view_report.png>
-Package pdftex.def Info: view_report.png used on input line 1113.
+Package pdftex.def Info: view_report.png used on input line 1112.
 (pdftex.def)             Requested size: 406.51599pt x 157.03613pt.
  [31
 
@@ -668,7 +668,7 @@ Underfull \hbox (badness 2591) in paragraph at lines 46--49
 Here is how much of TeX's memory you used:
  4731 strings out of 495059
  61598 string characters out of 3182029
- 166457 words of memory out of 3000000
+ 166460 words of memory out of 3000000
  7824 multiletter control sequences out of 15000+200000
  9930 words of font info for 34 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -686,9 +686,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti8.pfb>
-Output written on project.pdf (38 pages, 997299 bytes).
+Output written on project.pdf (38 pages, 930415 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
+ 208 PDF objects out of 1000 (max. 8388607)
  127 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
