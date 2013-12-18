@@ -1,0 +1,50 @@
+
+User
+  associations
+    should be associated with forms
+  attributes
+    should have name
+    should have email
+    should have password
+
+Form
+  associations
+    should be associated with questions
+    should be associated with replies
+  attributes
+    should have a name
+    should have a description
+  #max_question_number
+    should return the higest number of the existing questions
+
+FormType
+  associations
+    should be associated with forms
+  attributes
+    should have a name
+    should have a code
+
+Reply
+  associations
+    should be associated with answers
+    should be associated with form
+  
+Question
+  associations
+    should be associated with rules
+    should be associated with options
+  attributes
+    should have a text
+    should have a form
+    should have a type
+  #next_question
+    when the form is continuous
+      should get the next based on number
+    when the form is conditions
+      should get the next based on answer and the rule
+
+Otions
+  attributes
+    should have a text
+    should have a question
+    

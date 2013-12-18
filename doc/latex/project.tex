@@ -361,7 +361,7 @@
             Reaproveitar formulários\cellcolor{gray}                          &               & X           &         & \em X \\
             \hline
           \end{tabular}
-          \caption{Comparativo de funcionalidades}
+          \caption{Comparativo de funcionalidades.}
         \end{center}
       \end{table}
       
@@ -372,7 +372,7 @@
     \subsection{Requisitos Funcionais}
 
     \paragraph{}
-    As especificações a seguir mostra, detalhadamente, cada requisito funcional.
+    As especificações a seguir mostram, detalhadamente, cada requisito funcional.
     
       \subsubsection{Cadastrar usuário.}
       
@@ -477,6 +477,8 @@
             \caption{RF. 004 - Editar formulário.}
           \end{center}
         \end{table}
+
+    \clearpage
   
       \subsubsection{Cadastrar questão.}
 
@@ -552,8 +554,6 @@
             \caption{RF. 007 - Responder um formulário.}
           \end{center}
         \end{table}
-
-    \clearpage
     
       \subsubsection{Visualizar as respostas de um formulário.}
 
@@ -581,6 +581,8 @@
             \caption{RF. 008 - Visualizar as respostas de um formulário.}
           \end{center}
         \end{table}
+
+    \clearpage
 
     \subsection{Requisitos não Funcionais}
     
@@ -621,8 +623,6 @@
           \end{center}
         \end{table}
 
-    \clearpage
-
       \subsubsection{Utilizar máquina como servidor de banco de dados.}
 
         \begin{table}[h]
@@ -639,6 +639,8 @@
             \caption{RNF. 003 - Utilizar máquina como servidor de banco de dados.}
           \end{center}
         \end{table}
+
+    \clearpage
 
       \subsubsection{Utilizar servidor de banco de dados MySQL.}
 
@@ -674,8 +676,6 @@
           \end{center}
         \end{table}
 
-    \clearpage
-
       \subsubsection{Utilizar a linguagem Ruby.}
 
         \begin{table}[h]
@@ -692,6 +692,8 @@
             \caption{RNF. 006 - Utilizar a linguagem Ruby.}
           \end{center}
         \end{table}
+
+    \clearpage
         
       \subsubsection{Utilizar o framework Ruby on Rails.}
 
@@ -713,8 +715,14 @@
     \clearpage
 
     \subsection{Casos de uso}
-
+      
       \subsubsection{Cadastrar usuário.}
+
+        \begin{figure}[h!]
+          \centering
+          \includegraphics[width=.5\textwidth]{auth_create_user.png}
+          \caption{Cadastrar usuário}
+        \end{figure}
 
         \begin{table}[h]
           \begin{center}
@@ -748,16 +756,16 @@
             \caption{UC01 - Cadastrar usuário.}
           \end{center}
         \end{table}
-    
-        \begin{figure}[h!]
-          \centering
-          \includegraphics[width=.9\textwidth]{create_user.png}
-          \caption{Protótipo de UI para UC01}
-        \end{figure}
 
     \clearpage
 
       \subsubsection{Autenticar usuário no sistema.}
+
+        \begin{figure}[h!]
+          \centering
+          \includegraphics[width=.5\textwidth]{auth_create_user.png}
+          \caption{Autenticar usuário no sistema}
+        \end{figure}
 
         \begin{table}[h]
           \begin{center}
@@ -784,16 +792,16 @@
             \caption{UC02 - Autenticar usuário no sistema.}
           \end{center}
         \end{table}
-        
-        \begin{figure}[h!]
-          \centering
-          \includegraphics[width=.9\textwidth]{authenticate_user.png}
-          \caption{Protótipo de UI para UC02}
-        \end{figure}
 
     \clearpage
 
       \subsubsection{Cadastrar formulário.}
+
+        \begin{figure}[h!]
+          \centering
+          \includegraphics[width=.5\textwidth]{cadastrar.png}
+          \caption{Cadastrar formulário}
+        \end{figure}
 
         \begin{table}[h]
           \begin{center}
@@ -820,16 +828,16 @@
             \caption{UC03 - Cadastrar formulário.}
           \end{center}
         \end{table}
-        
-        \begin{figure}[h!]
-          \centering
-          \includegraphics[width=.9\textwidth]{new_form.png}
-          \caption{Protótipo de UI para UC03}
-        \end{figure}
 
     \clearpage
       
       \subsubsection{Editar formulário.}
+
+        \begin{figure}[h!]
+          \centering
+          \includegraphics[width=.5\textwidth]{editar.png}
+          \caption{Editar formulário}
+        \end{figure}
 
         \begin{table}[h]
           \begin{center}
@@ -862,16 +870,16 @@
             \caption{UC04 - Editar formulário.}
           \end{center}
         \end{table}
-        
-        \begin{figure}[h!]
-          \centering
-          \includegraphics[width=.9\textwidth]{editor.png}
-          \caption{Protótipo de UI para UC04}
-        \end{figure}
 
     \clearpage
       
       \subsubsection{Responder um formulário.}
+
+        \begin{figure}[h!]
+          \centering
+          \includegraphics[width=.5\textwidth]{responder.png}
+          \caption{Responder um formulário}
+        \end{figure}
 
         \begin{table}[h]
           \begin{center}
@@ -890,7 +898,7 @@
               \hline
               Ação\cellcolor{gray} & Reação\cellcolor{gray} \\
               \hline
-              Um usuário clica no {\em link} para resonder o formulário & O sitema exibe as informações do formulário e todas as questões desse formulário. \\
+              Um usuário clica no {\em link} para responder o formulário & O sitema exibe as informações do formulário e todas as questões desse formulário. \\
               \hline
               O usuário responde cada pergunta e clica no botão 'Salvar' no final da lista de questões. & O sistema valida as respostas, salva todas e exibe a tela de agradecimento. Exibe mensagem de erro caso a validação não passe ou algum erro aconteça. \\
               \hline
@@ -899,26 +907,24 @@
               \hline
               Ação\cellcolor{gray} & Reação\cellcolor{gray} \\
               \hline
-              Um usuário clica no {\em link} para resonder o formulário & O sitema exibe as informações do formulário e a primeira questão do formulário. \\
+              Um usuário clica no {\em link} para responder o formulário & O sitema exibe as informações do formulário e a primeira questão do formulário. \\
               \hline
               O usuário responde a questão e clica em 'Próxima questão'. & O sistema valida a resposta e exibe a próxima questão. Exibe mensagem de erro caso ocorra. \\
-              \hline
-              O usuário repete a ação \#2 para todas as questões. & O sistema repete a ação \#2 para todas as questões. Ao receber a resposta da última questão, exime mensagem de agradecimento. \\
               \hline
             \end{tabular}
             \caption{UC05 - Responder um formulário.}
           \end{center}
         \end{table}
-        
-        \begin{figure}[h!]
-          \centering
-          \includegraphics[width=.9\textwidth]{reply_a_form.png}
-          \caption{Protótipo de UI para UC05}
-        \end{figure}
 
     \clearpage
       
       \subsubsection{Visualizar relatório.}
+
+        \begin{figure}[h!]
+          \centering
+          \includegraphics[width=.5\textwidth]{visualizar.png}
+          \caption{Visualizar relatório}
+        \end{figure}
 
         \begin{table}[h]
           \begin{center}
@@ -944,31 +950,30 @@
           \end{center}
         \end{table}
         
-        \begin{figure}[h!]
-          \centering
-          \includegraphics[width=.9\textwidth]{view_report.png}
-          \caption{Protótipo de UI para UC06}
-        \end{figure}
-        
   \clearpage
       
   \section{Diagramas}
   
     \subsection{Diagrama de classes}
     
-      \subsubsection{Diagrama de classes da aplicação.}
-
-        \begin{figure}[h!]
-          \centering
-          \includegraphics[width=1.0\textwidth]{class_diagram.png}
-          \caption{Diagrama de classes}
-        \end{figure}
+      \paragraph{}
+      O seguinte diagrama mostra as classes do sistema e seus relacionamentos.
+    
+      \begin{figure}[h!]
+        \centering
+        \includegraphics[width=1.0\textwidth]{class_diagram.png}
+        \caption{Diagrama de classes}
+      \end{figure}
         
   \clearpage
   
     \subsection{Diagramas de sequência}
     
       \subsubsection{Diagrama de sequência da interface REST da aplicação.}
+    
+      \paragraph{}
+      O próximo diagrama descreve a sequência de comunicação entre o cliente - navegador, e o 
+      serviço REST da aplicação.
 
         \begin{figure}[h!]
           \centering
@@ -979,6 +984,10 @@
   \clearpage
     
       \subsubsection{Diagrama de sequência da edição de formulário da aplicação.}
+    
+      \paragraph{}
+      O próximo diagrama descreve a sequência de comunicação para edição do 
+      formulário.
 
         \begin{figure}[h!]
           \centering
@@ -987,21 +996,123 @@
         \end{figure}
         
   \clearpage
-        
   
-    \subsection{Diagramas de caso de uso}
+    \subsection{Diagrama entidade relacionamento}
     
-      \paragraph{}
-      A seguir, o caso de uso, descrevendo o cenário das funcionalidades do sistema de questionário eletrônico.
+    \paragraph{}
+    O próximo modelo diagramático descreve o modelo de dados do sistema
+    com alto nível de abstração.
 
+      \begin{figure}[h!]
+        \centering
+        \includegraphics[width=1.0\textwidth]{er.png}
+        \caption{Diagrama entidade relacionamento.}
+      \end{figure}
+        
+  \clearpage
+  
+  \section{Sistema implementado}
     
-      \subsubsection{Diagrama de caso de uso da aplicação.}
+    \paragraph{}
+    
+    As próximas seções descrevem e apresentam as principais telas do sistema implementado. 
+    
+    \subsection{Tela de cadastro de novo usuário.}
+    
+    \paragraph{}
+    A tela que segue é a de criação de um novo usuário. Contém os dados 
+    básicos necessários e um campo extra para repetir a senha, com objetivo de
+    garantir que o usuário inseriu a senha que realmente deseja.
+    
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[width=.9\textwidth]{create_user.png}
+      \caption{Tela de cadastro de novo usuário.}
+    \end{figure}
+    
+    \subsection{Tela de autenticação do usuário.}
+    
+    \paragraph{}
 
-        \begin{figure}[h!]
-          \centering
-          \includegraphics[width=1.0\textwidth]{uc_diagram.png}
-          \caption{Diagrama de caso de uso da aplicação}
-        \end{figure}
+    Nessa tela, um usuário já cadastrado pode se autenticar no sistema.
+        
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[width=.9\textwidth]{authenticate_user.png}
+      \caption{Tela de autenticação do usuário.}
+    \end{figure}
+        
+  \clearpage
+    
+    \subsection{Tela de criação de um novo formulário.}
+    
+    \paragraph{}
+
+    Na tela seguinte, um usuário autenticado insere um novo formulário no
+    sistema. Note que nessa tela apenas os dados básicos do formulário 
+    podem ser inseridos, as perguntas e opções são inseridas na tela de 
+    edição de formulário.
+        
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[width=.9\textwidth]{new_form.png}
+      \caption{Tela de criação de um novo formulário.}
+    \end{figure}
+        
+  \clearpage
+    
+    \subsection{Tela de edição do formulário.}
+    
+    \paragraph{}
+    Essa tela é a principal tela do sistema. Nela, pode-se cadastrar e
+    editar perguntas de um formulário. Perguntas podem ser de diferentes
+    tipo. Na coluna à direita, são listados os diferentes tipos de 
+    perguntas. Para adicionar uma nova pergunta ao formulário, basta clicar
+    no botão correspondente à pergunta desejada.
+    
+    \paragraph{}
+    Após adicionar uma pergunta, pode-se adicionar opções de resposta
+    para ela - caso tal pergunta não seja de texto livre. Opções podem 
+    ser removidas ou editadas. Para cada opção, pode-se adicionar uma 
+    regra. Uma regra direciona o fluxo do questionário. Portanto, na regra
+    pode-se definir o  número da próxima pergunta.
+        
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[width=.9\textwidth]{editor.png}
+      \caption{Tela de edição do formulário.}
+    \end{figure}
+        
+  \clearpage
+    
+    \subsection{Tela de resposta à um formulário.}
+    
+    \paragraph{}
+    Essa é a tela de resposta para um determinado formulário. Como formulários
+    podem ser contínuos ou condicionais, essa tela pode exibir as questões 
+    do formulário de duas maneiras distintas. A figura a seguir, apresenta
+    a tela de resposta de um questionário do tipo condicional. Nela, 
+    a primeira pergunta do formulário é exibida e, dependendo da resposta, 
+    outras novas peguntas são exibidas sessessivamente, se opondo ao modo de exibição de um 
+    formulário contínuo, onde todas as perguntas são exibidas de uma só vez.
+        
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[width=.9\textwidth]{reply_a_form.png}
+      \caption{Tela de resposta à um formulário.}
+    \end{figure}
+    
+    \subsection{Tela de visualização de relatório.}
+    
+    \paragraph{}
+    A próxima tela, é responsável pela visualização do relatório de respostas
+    de um determinado formulário.
+        
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[width=.9\textwidth]{view_report.png}
+      \caption{Tela de visualização de relatório.}
+    \end{figure}
         
   \clearpage
       
@@ -1029,20 +1140,223 @@
     \paragraph{}
     
     Como o Ruby on Rails é um {\em framework} MVC, o {\em Rspec} provê um
-    feramental para testar cada camada da aplicação. Apenas a título de 
-    exemplo, a próxima figura mostra um pequeno trecho de código dos 
-    testes do modelo (entidade) 'Formulário'.
+    feramental para testar cada camada da aplicação.
+        
+  \clearpage
+    
+    \subsection{Testes dos modelos}
+    
+    \subsubsection{Usuário}
+      
+    \paragraph{}
+    No próximo trecho de códido, podemos ver um exemplo te teste do modelo
+    Usuário:
     
     {\scriptsize
       \lstset{language=Ruby}
       \begin{lstlisting}
-#include<stdio.h>
-#include<iostream>
-int main(void)
-{
-  printf("Hello World\n");
-  return 0;
-}
+
+  require 'spec_helper'
+
+  describe User do
+
+    before :each do
+      @user = User.new
+    end
+
+    describe "associations" do
+    
+      it 'should be associated with forms' do
+        @user.should respond_to(:forms)
+      end
+    end
+
+    describe "attributes" do
+
+      it "should have name" do
+        @user.should respond_to(:name)
+      end
+
+      it "should have email" do
+        @user.should respond_to(:email)
+      end
+
+      it "should have password" do
+        @user.should respond_to(:password)
+      end
+    end
+  end
+      \end{lstlisting}
+    }
+    
+    \paragraph{}
+    
+    Neste teste, procura-se testar as relações do modelo com as outras 
+    classes do sistemas, além de seus atributos.
+    
+    \paragraph{}
+    Quando rodamos esse teste usando o {\em rspec}, temos a seguinte saída
+    como resultado, mostrando que todos os testes passaram:
+    
+    {\scriptsize
+      \lstset{language=sh}
+      \begin{lstlisting}
+
+  rspec --format nested spec spec/user
+
+  User
+    associations
+      should be associated with forms
+    attributes
+      should have name
+      should have email
+      should have password
+
+  Finished in 0.03836 seconds
+  4 examples, 0 failures
+
+      \end{lstlisting}
+    }
+        
+  \clearpage
+    
+    \subsubsection{Fomulário}
+      
+    \paragraph{}
+    A seguir vemos os testes do modelo Formulário. Esse modelo possui, além
+    dos testes de relacionamento e atributos, um método especial: $max\_question\_number$. 
+    \\Esse método é responsável por retornar a questão desse formulário com maior número. 
+    
+    {\scriptsize
+      \lstset{language=Ruby}
+      \begin{lstlisting}
+      
+  require 'spec_helper'
+
+  describe Form do
+
+    before :each do
+      @form = Form.new
+    end
+
+    describe "associations" do
+    
+      it 'should be associated with questions' do
+        @form.should respond_to(:questions)
+      end
+    
+      it 'should be associated with replies' do
+        @form.should respond_to(:replies)
+      end
+    end
+
+    describe "attributes" do
+
+      it "should have a name" do
+        @form.should respond_to(:name)
+      end
+
+      it "should have a description" do
+        @form.should respond_to(:description)
+      end
+    end
+    
+    describe "#max_question_number" do
+    
+      it "should return the higest number of the existing questions" do
+        @form.id = 1
+        q0 = Question.new(form_id: @form.id, number: 0)
+        q1 = Question.new(form_id: @form.id, number: 5)
+        q2 = Question.new(form_id: @form.id, number: 4)
+        @form.max_question_number.should == q1
+      end
+    end
+  end
+      \end{lstlisting}
+    }
+    
+  \clearpage
+    
+    \paragraph{}
+    
+    O resultado do teste:
+    
+    {\scriptsize
+      \lstset{language=Bash}
+      \begin{lstlisting}
+
+  rspec --format nested spec spec/form
+      
+  Form
+    associations
+      should be associated with questions
+      should be associated with replies
+    attributes
+      should have a name
+      should have a description
+    #max_question_number
+      should return the higest number of the existing questions
+
+
+  Finished in 1.03234 seconds
+  5 examples, 0 failures
+      \end{lstlisting}
+    }
+    
+    \paragraph{}
+    
+    A seguir vemos o resultados de todos os testes rodados de uma
+    só vez:
+    
+    {\scriptsize
+      \lstset{language=Bash}
+      \begin{lstlisting}
+
+  rspec --format nested 
+  
+  User
+    associations
+      should be associated with forms
+    attributes
+      should have name
+      should have email
+      should have password
+
+  Form
+    associations
+      should be associated with questions
+      should be associated with replies
+    attributes
+      should have a name
+      should have a description
+    #max_question_number
+      should return the higest number of the existing questions
+
+  FormType
+    associations
+      should be associated with forms
+    attributes
+      should have a name
+      should have a code
+
+  Reply
+    associations
+      should be associated with answers
+      should be associated with form
+    
+  Question
+    associations
+      should be associated with rules
+      should be associated with options
+    attributes
+      should have a text
+      should have a form
+      should have a type
+    #next_question
+      when the form is continuous
+        should get the next based on number
+      when the form is conditions
+        should get the next based on answer and the rule
       \end{lstlisting}
     }
     

@@ -29,4 +29,4 @@ Graform::Application.configure do
   config.assets.enabled = true
 end
 
-HOST_AND_PORT="http://www.dalmirdasilva.com:3000"
+HOST_AND_PORT="http://localhost:3000"
