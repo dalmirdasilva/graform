@@ -13,6 +13,7 @@
 \usepackage{xcolor,colortbl}
 \definecolor{gray}{rgb}{0.85,0.85,0.85}
 \definecolor{lightblue}{rgb}{0.75,0.75,0.75}
+\hyphenation{res-postas}
 
 \begin{document}
 
@@ -194,7 +195,7 @@
         Para uma dada questão $q \in Q$, a próxima questão $Q_k$ é determinada 
         pelas possíveis respostas $A$ de $q$ e uma regra $r$. Portanto, cada elemento
         de $R$ é definido como uma função que mapeia a questão atual, a 
-        resposta e uma regra para uma próxiam questão: 
+        resposta e uma regra para uma próxima questão: 
         
         \begin{eqnarray}
           R_n &=& f(q, A_n, r) : Q_k
@@ -214,7 +215,7 @@
         \paragraph{}
         
         Para controlar a primeira e última questão de um formulário, cada
-        vértice contém 2 atributos: '{\em inicial}' e '{\em final}'. Pode haver
+        vértice contém 2 atributos: {\em inicial} e {\em final}. Pode haver
         apenas um vértice inicial. Entretanto, múltiplos vértices podem ser
         considerados terminais (finais), permitindo que o formulário seja 
         encerrado de forma controlada.
@@ -226,7 +227,7 @@
         Devido ao apoio da instituição, onde esse trabalho foi realizado,
         à projetos e iniciativas {\em open source}, decidiu-se utilizar,
         em todas as partes desse trabalho, ferramentas livres e/ou de código fonte aberto.
-        Desde o sistema operaconal onde ele foi desenvolvido até
+        Desde o Sistema Operacional onde ele foi desenvolvido até
         o programa utilizado para escrever esse documento.
         
         \subsubsection{Sistema Operacional}
@@ -317,7 +318,7 @@
 
       Para o presente trabalho, pesquisamos os principais fornecedores de 
       funcionalidades similares no mercado. Três fornecedores foram 
-      identificados como os mais áptos a fornecer os serviços desejados
+      identificados como os mais aptos a fornecer os serviços desejados
       pela Stringhini. São eles:
 
       \begin{enumerate}
@@ -467,7 +468,7 @@
               \hline
               Pré-condições & Usuário estar logado no sistema, existir um formulário. \\
               \hline
-              Pós-condições & Cuntinuar na tela de edição. \\
+              Pós-condições & Continuar na tela de edição. \\
               \hline
               Cenários & \\
               \hline
@@ -515,7 +516,7 @@
               \hline
               Título & Cadastrar opção. \\
               \hline
-              Descrição & Um usuário edita um formulário. Para as questões do tipo Multipla Escolha e Única Escolha, o usuário solicita a inclusão de uma nova opção para uma dada questão. \\
+              Descrição & Um usuário edita um formulário. Para as questões do tipo Múltipla Escolha e Única Escolha, o usuário solicita a inclusão de uma nova opção para uma dada questão. \\
               \hline
               Pré-condições & Existir uma questão cadastrada no sistema. \\
               \hline
@@ -548,7 +549,7 @@
               \hline
               Cenários &   \\
               \hline
-              1.  Cenário Principal & Acesso ao link de resposta de um fomrulário. \\
+              1.  Cenário Principal & Acesso ao link de resposta de um formulário. \\
               \hline
             \end{tabular}
             \caption{RF. 007 - Responder um formulário.}
@@ -565,7 +566,7 @@
               \hline
               Título & Visualizar as respostas de um formulário. \\
               \hline
-              Descrição & O usuário dono do formulário poderá acessar a pagina de relatório r visualizar todas as respostas de uma dado formulário. \\
+              Descrição & O usuário dono do formulário poderá acessar a página de relatório e visualizar todas as respostas de uma dado formulário. \\
               \hline
               Pré-condições & Existir um formulário cadastrado no sistema. \\
               \hline
@@ -573,7 +574,7 @@
               \hline
               Cenários &   \\
               \hline
-              1.  Cenário Principal & Usuário acessa a área de relatorios, escolhe um formulário para ser visualizado. \\
+              1.  Cenário Principal & Usuário acessa a área de relatórios, escolhe um formulário para ser visualizado. \\
               \hline
               2.  Cenário Alternativo & Usuário com um formulário cadastrado no sistema, acessa esse formulário e solicita a visualização do relatório desse formulário. \\
               \hline
@@ -750,7 +751,7 @@
               \hline
               Ação\cellcolor{gray} & Reação\cellcolor{gray} \\
               \hline
-              O usuário já cadastrado e logado no sistema, clicar no link 'Minha conta'. & O sistema exibe as informações do usuário. \\
+              O usuário já cadastrado e logado no sistema, clicar no link {\em Minha conta}. & O sistema exibe as informações do usuário. \\
               \hline
             \end{tabular}
             \caption{UC01 - Cadastrar usuário.}
@@ -786,7 +787,7 @@
               \hline
               Um usuário clica no \em link Login & O sistema exibe um formulário para o usuário entrar com as informações. \\
               \hline
-              O usuário entra com os dados. E clica no botão 'Login'. & O sistema valida as informações. Autentica o usuário e redireciona para a página de lista de formulários. Em caso de falha, exibe mensagem de erro na tela. \\
+              O usuário entra com os dados. E clica no botão {\em Login}. & O sistema valida as informações. Autentica o usuário e redireciona para a página de lista de formulários. Em caso de falha, exibe mensagem de erro na tela. \\
               \hline
             \end{tabular}
             \caption{UC02 - Autenticar usuário no sistema.}
@@ -811,7 +812,7 @@
               \hline
               Nome do UC: \cellcolor{gray} & Cadastrar formulário. \\
               \hline
-              Objetivo: \cellcolor{gray} & Cadastrar um novo formulário no sitema. \\
+              Objetivo: \cellcolor{gray} & Cadastrar um novo formulário no sistema.. \\
               \hline
               Ativação: \cellcolor{gray} & Página principal / Meus formulários / Novo formulário \\
               \hline
@@ -820,9 +821,9 @@
               \hline
               Ação\cellcolor{gray} & Reação\cellcolor{gray} \\
               \hline
-              Um usuário clica no botão 'Novo formulário' & O sistema exibe um formulário para o usuário entrar com as informações do novo formulário. \\
+              Um usuário clica no botão {\em Novo formulário} & O sistema exibe um formulário para o usuário entrar com as informações do novo formulário. \\
               \hline
-              O usuário entra com os dados. E clica no botão 'Salvar'. & O sistema valida as informações, salva o formulário e redireciona para a página de edição do formulário. Em caso de falha, exibe mensagem de erro na tela. \\
+              O usuário entra com os dados. E clica no botão {\em Salvar}. & O sistema valida as informações, salva o formulário e redireciona para a página de edição do formulário. Em caso de falha, exibe mensagem de erro na tela. \\
               \hline
             \end{tabular}
             \caption{UC03 - Cadastrar formulário.}
@@ -847,7 +848,7 @@
               \hline
               Nome do UC: \cellcolor{gray} & Editar formulário. \\
               \hline
-              Objetivo: \cellcolor{gray} & Editar um formulário existente no sitema. \\
+              Objetivo: \cellcolor{gray} & Editar um formulário existente no sistema.. \\
               \hline
               Ativação: \cellcolor{gray} & Página principal / Formulário / Editor \\
               \hline
@@ -856,13 +857,13 @@
               \hline
               Ação\cellcolor{gray} & Reação\cellcolor{gray} \\
               \hline
-              Um usuário clica no botão 'Editor' & O sistema exibe as informações do formulário e uma lista de tipos de questão a ser adicionadas ao formulário. \\
+              Um usuário clica no botão {\em Editor} & O sistema exibe as informações do formulário e uma lista de tipos de questão a ser adicionadas ao formulário. \\
               \hline
-              O usuário clica no botão 'Adicionar', de um tipo específico de questão. & O sistema insere na tela um formulário para o usuário entrar com os dados da questão. Esse formulário deverá ser adicionado no final do formulário. \\
+              O usuário clica no botão {\em Adicionar}, de um tipo específico de questão. & O sistema insere na tela um formulário para o usuário entrar com os dados da questão. Esse formulário deverá ser adicionado no final do formulário. \\
               \hline
               O usuário entra com o nome da questão e clica em salvar. & O sistema salva a questão, e exibe o feedback para o usuário. Sem recarregar a página. \\
               \hline
-              O usuário clica no botão 'Adicionar' uma opção. & O sistema insere na tela uma opção para o usuário entrar com os dados. \\
+              O usuário clica no botão {\em Adicionar} uma opção. & O sistema insere na tela uma opção para o usuário entrar com os dados. \\
               \hline
               O usuário entra com o valor da opção e clica em salvar. & O sistema salva a opção, e exibe o feedback para o usuário. Sem recarregar a página. \\
               \hline
@@ -898,18 +899,18 @@
               \hline
               Ação\cellcolor{gray} & Reação\cellcolor{gray} \\
               \hline
-              Um usuário clica no {\em link} para responder o formulário & O sitema exibe as informações do formulário e todas as questões desse formulário. \\
+              Um usuário clica no {\em link} para responder o formulário & O sistema. exibe as informações do formulário e todas as questões desse formulário. \\
               \hline
-              O usuário responde cada pergunta e clica no botão 'Salvar' no final da lista de questões. & O sistema valida as respostas, salva todas e mostra a tela de agradecimento. Exibe mensagem de erro caso a validação não passe ou algum erro aconteça. \\
+              O usuário responde cada pergunta e clica no botão {\em Salvar} no final da lista de questões. & O sistema valida as respostas, salva todas e mostra a tela de agradecimento. Exibe mensagem de erro caso a validação não passe ou algum erro aconteça. \\
               \hline
               \hline              
               Cenário 2 - Responder a um formulário do tipo condicional: &  \\
               \hline
               Ação\cellcolor{gray} & Reação\cellcolor{gray} \\
               \hline
-              Um usuário clica no {\em link} para responder o formulário & O sitema exibe as informações do formulário e a primeira questão do formulário. \\
+              Um usuário clica no {\em link} para responder o formulário & O sistema. exibe as informações do formulário e a primeira questão do formulário. \\
               \hline
-              O usuário responde a questão e clica em 'Próxima questão'. & O sistema valida a resposta e exibe a próxima questão. Exibe mensagem de erro caso ocorra. \\
+              O usuário responde a questão e clica em {\em Próxima questão}. & O sistema valida a resposta e exibe a próxima questão. Exibe mensagem de erro caso ocorra. \\
               \hline
             \end{tabular}
             \caption{UC05 - Responder um formulário.}
@@ -943,7 +944,7 @@
               \hline
               Ação\cellcolor{gray} & Reação\cellcolor{gray} \\
               \hline
-              Um usuário logado, com um formulário, clica no {\em link} 'Relatório'. & O sitema exibe as respostas do formulário. \\
+              Um usuário logado, com um formulário, clica no {\em link} {\em Relatório}. & O sistema exibe as respostas do formulário. \\
               \hline
             \end{tabular}
             \caption{UC06 - Visualizar relatório.}
@@ -1092,7 +1093,7 @@
     do formulário de duas maneiras distintas. A figura a seguir, apresenta
     a tela de resposta de um questionário do tipo condicional. Nela, 
     a primeira pergunta do formulário é exibida e, dependendo da resposta, 
-    outras novas peguntas são exibidas sessessivamente, se opondo ao modo de exibição de um 
+    outras novas perguntas são exibidas secessivamente, se opondo ao modo de exibição de um 
     formulário contínuo, onde todas as perguntas são exibidas de uma só vez.
         
     \begin{figure}[h!]
@@ -1123,7 +1124,7 @@
 
     Como padrão de testes do projeto, utilizou-se {\em Test Driven 
     Development} (TDD). TDD é um padrão de testes no qual os testes são
-    criados antes da implementação. Sendo assim, os testes orientam o
+    criados antes da implementação. Sendo assim, os testes orientam a
     codificação (como o nome já diz). Primeiro cria-se um teste, depois 
     criamos uma implementação para fazer o teste passar \cite{urubatan}.
      
@@ -1148,7 +1149,7 @@
     \subsubsection{Usuário}
       
     \paragraph{}
-    No próximo trecho de código, podemos ver um exemplo te teste do modelo
+    No próximo trecho de código, podemos ver um exemplo de teste do modelo
     Usuário:
     
     {\scriptsize
@@ -1304,7 +1305,7 @@
     
     \paragraph{}
     
-    A seguir, vemos o resultados de todos os testes rodados de uma
+    A seguir, vemos os resultados de todos os testes rodados de uma
     só vez:
     
     {\scriptsize
@@ -1379,8 +1380,8 @@
     A utilização de uma aplicação web, possível de ser acessada por
     qualquer computador, sem a necessidade de instalação de um software 
     {\em desktop}, aumentou a produtividade da empresa como um todo. Também,
-    houve uma redução de incidências de erros humanos, devido ao fato de não ser mais necessáro o
-    uso de instrução SQL diretamente na base de dados para a criação e gerenciamento dos formulários.
+    houve uma redução de incidências de erros humanos, devido ao fato de não ser mais necessário o
+    uso de instruções SQL diretamente na base de dados para a criação e gerenciamento dos formulários.
 
   \newpage
   \bibliography{project}{}

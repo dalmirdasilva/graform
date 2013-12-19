@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.28)  18 DEC 2013 17:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.28)  18 DEC 2013 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -365,18 +365,18 @@ Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 ) (./project.aux)
 \openout1 = `project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count98
@@ -442,7 +442,7 @@ e
 <logo.jpg, id=1, 745.78625pt x 134.5025pt>
 File: logo.jpg Graphic file (type jpg)
  <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 22.
+Package pdftex.def Info: logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 225.84375pt x 40.73073pt.
  [1
 
@@ -469,20 +469,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [4] [5] [6]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 162.
+(Font)              <5> on input line 163.
  [7]
 <graph.png, id=36, 461.47406pt x 212.29312pt>
 File: graph.png Graphic file (type png)
  <use graph.png>
-Package pdftex.def Info: graph.png used on input line 210.
+Package pdftex.def Info: graph.png used on input line 211.
 (pdftex.def)             Requested size: 406.51599pt x 187.00964pt.
  [8 <./graph.png>] [9]
-Underfull \hbox (badness 1648) in paragraph at lines 355--355
-[]|\OT1/cmr/m/n/10.95 Cadastro de op^^Xc~oes de re-
- []
-
-
-Underfull \hbox (badness 1776) in paragraph at lines 357--357
+Underfull \hbox (badness 1776) in paragraph at lines 358--358
 []|\OT1/cmr/m/n/10.95 Alterar quest~oes de acordo
  []
 
@@ -505,7 +500,7 @@ Underfull \hbox (badness 1776) in paragraph at lines 357--357
 File: auth_create_user.png Graphic file (type png)
 
 <use auth_create_user.png>
-Package pdftex.def Info: auth_create_user.png used on input line 723.
+Package pdftex.def Info: auth_create_user.png used on input line 724.
 (pdftex.def)             Requested size: 225.84375pt x 162.69894pt.
  [18
 
@@ -513,7 +508,7 @@ Package pdftex.def Info: auth_create_user.png used on input line 723.
 File: auth_create_user.png Graphic file (type png)
 
 <use auth_create_user.png>
-Package pdftex.def Info: auth_create_user.png used on input line 766.
+Package pdftex.def Info: auth_create_user.png used on input line 767.
 (pdftex.def)             Requested size: 225.84375pt x 162.69894pt.
  [19
 
@@ -521,14 +516,14 @@ Package pdftex.def Info: auth_create_user.png used on input line 766.
 <cadastrar.png, id=82, 458.46281pt x 260.47313pt>
 File: cadastrar.png Graphic file (type png)
  <use cadastrar.png>
-Package pdftex.def Info: cadastrar.png used on input line 802.
+Package pdftex.def Info: cadastrar.png used on input line 803.
 (pdftex.def)             Requested size: 225.84375pt x 128.31258pt.
  [20
 
  <./cadastrar.png>] <editar.png, id=87, 445.665pt x 260.47313pt>
 File: editar.png Graphic file (type png)
  <use editar.png>
-Package pdftex.def Info: editar.png used on input line 838.
+Package pdftex.def Info: editar.png used on input line 839.
 (pdftex.def)             Requested size: 225.84375pt x 131.99693pt.
 
 [21
@@ -537,33 +532,39 @@ Package pdftex.def Info: editar.png used on input line 838.
 File: responder.png Graphic file (type png)
 
 <use responder.png>
-Package pdftex.def Info: responder.png used on input line 880.
+Package pdftex.def Info: responder.png used on input line 881.
 (pdftex.def)             Requested size: 225.84375pt x 86.2505pt.
- [22
 
- <./responder.png>]
-<visualizar.png, id=97, 341.02406pt x 145.29282pt>
+Underfull \hbox (badness 1331) in paragraph at lines 904--904
+\OT1/cmr/m/n/10.95 no bot~ao \OT1/cmr/m/it/10.95 Sal-var \OT1/cmr/m/n/10.95 no 
+fi-nal da lista de
+ []
+
+[22
+
+ <./responder.png>] <visualizar.png, id=97, 341.02406pt x 145.29282pt>
 File: visualizar.png Graphic file (type png)
- <use visualizar.png>
-Package pdftex.def Info: visualizar.png used on input line 925.
+
+<use visualizar.png>
+Package pdftex.def Info: visualizar.png used on input line 926.
 (pdftex.def)             Requested size: 225.84375pt x 96.22165pt.
+ [23
 
-[23
-
- <./visualizar.png>] <class_diagram.png, id=102, 835.62187pt x 529.98pt>
+ <./visualizar.png>]
+<class_diagram.png, id=102, 835.62187pt x 529.98pt>
 File: class_diagram.png Graphic file (type png)
-
-<use class_diagram.png>
-Package pdftex.def Info: class_diagram.png used on input line 964.
+ <use class_diagram.png>
+Package pdftex.def Info: class_diagram.png used on input line 965.
 (pdftex.def)             Requested size: 451.6875pt x 286.48413pt.
- [24
+
+[24
 
  <./class_diagram.png>]
 <sequence_diagram_main.png, id=108, 982.42032pt x 831.105pt>
 File: sequence_diagram_main.png Graphic file (type png)
 
 <use sequence_diagram_main.png>
-Package pdftex.def Info: sequence_diagram_main.png used on input line 980.
+Package pdftex.def Info: sequence_diagram_main.png used on input line 981.
 (pdftex.def)             Requested size: 451.6875pt x 382.11003pt.
  [25
 
@@ -572,7 +573,7 @@ Package pdftex.def Info: sequence_diagram_main.png used on input line 980.
 File: sequence_diagram_editor.png Graphic file (type png)
 
 <use sequence_diagram_editor.png>
-Package pdftex.def Info: sequence_diagram_editor.png used on input line 994.
+Package pdftex.def Info: sequence_diagram_editor.png used on input line 995.
 (pdftex.def)             Requested size: 451.6875pt x 249.337pt.
  [26
 
@@ -580,7 +581,7 @@ Package pdftex.def Info: sequence_diagram_editor.png used on input line 994.
 <er.png, id=118, 1797.71625pt x 1430.34375pt>
 File: er.png Graphic file (type png)
  <use er.png>
-Package pdftex.def Info: er.png used on input line 1007.
+Package pdftex.def Info: er.png used on input line 1008.
 (pdftex.def)             Requested size: 451.6875pt x 359.37473pt.
  [27
 
@@ -588,14 +589,14 @@ Package pdftex.def Info: er.png used on input line 1007.
 File: create_user.png Graphic file (type png)
 
 <use create_user.png>
-Package pdftex.def Info: create_user.png used on input line 1028.
+Package pdftex.def Info: create_user.png used on input line 1029.
 (pdftex.def)             Requested size: 406.51599pt x 184.03517pt.
 
 <authenticate_user.png, id=123, 989.6975pt x 330.23375pt>
 File: authenticate_user.png Graphic file (type png)
 
 <use authenticate_user.png>
-Package pdftex.def Info: authenticate_user.png used on input line 1040.
+Package pdftex.def Info: authenticate_user.png used on input line 1041.
 (pdftex.def)             Requested size: 406.51599pt x 135.64362pt.
  [28
 
@@ -604,7 +605,7 @@ Package pdftex.def Info: authenticate_user.png used on input line 1040.
 File: new_form.png Graphic file (type png)
 
 <use new_form.png>
-Package pdftex.def Info: new_form.png used on input line 1057.
+Package pdftex.def Info: new_form.png used on input line 1058.
 (pdftex.def)             Requested size: 406.51599pt x 180.90144pt.
  [29
 
@@ -612,7 +613,7 @@ Package pdftex.def Info: new_form.png used on input line 1057.
 <editor.png, id=131, 1087.06125pt x 607.26875pt>
 File: editor.png Graphic file (type png)
  <use editor.png>
-Package pdftex.def Info: editor.png used on input line 1081.
+Package pdftex.def Info: editor.png used on input line 1082.
 (pdftex.def)             Requested size: 406.51599pt x 227.09512pt.
  [30
 
@@ -621,13 +622,13 @@ Package pdftex.def Info: editor.png used on input line 1081.
 File: reply_a_form.png Graphic file (type png)
 
 <use reply_a_form.png>
-Package pdftex.def Info: reply_a_form.png used on input line 1100.
+Package pdftex.def Info: reply_a_form.png used on input line 1101.
 (pdftex.def)             Requested size: 406.51599pt x 179.98083pt.
  <view_report.png, id=137, 1099.10625pt x 424.58624pt>
 File: view_report.png Graphic file (type png)
 
 <use view_report.png>
-Package pdftex.def Info: view_report.png used on input line 1112.
+Package pdftex.def Info: view_report.png used on input line 1113.
 (pdftex.def)             Requested size: 406.51599pt x 157.03613pt.
  [31
 
@@ -666,13 +667,13 @@ Underfull \hbox (badness 2591) in paragraph at lines 46--49
 
 ) [37] (./project.aux) ) 
 Here is how much of TeX's memory you used:
- 4731 strings out of 495059
- 61598 string characters out of 3182029
- 166460 words of memory out of 3000000
+ 4732 strings out of 495059
+ 61608 string characters out of 3182029
+ 166461 words of memory out of 3000000
  7824 multiletter control sequences out of 15000+200000
  9930 words of font info for 34 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 38i,12n,43p,289b,1188s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 15 hyphenation exceptions out of 8191
+ 38i,12n,43p,303b,1188s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8
@@ -686,7 +687,7 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti8.pfb>
-Output written on project.pdf (38 pages, 930390 bytes).
+Output written on project.pdf (38 pages, 931683 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  127 compressed objects within 2 object streams
